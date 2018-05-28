@@ -150,7 +150,7 @@ IP protocol scan
 * SA flag -> port open
 * RA flag -> port closed
 
-***SNMP Scanner (Active) *** allows you to scan a range or list of hosts performing ping, DNS and SNMP queries.
+***SNMP Scanner (Active)*** allows you to scan a range or list of hosts performing ping, DNS and SNMP queries.
 
 ***p0f (passive)*** is a tool that utilizes an array of sophisticated, purely passive traffic fingerprinting mechanisms to identify the players behind any incidental TCP/IP communications (often as little as a single normal SYN) without interfering in any way. It is used when NMap probes are blocked. 
 
