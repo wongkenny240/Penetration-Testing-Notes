@@ -1,6 +1,6 @@
 # Linux Basic
 
-####Linux Shortcut Key
+#### Linux Shortcut Key
 
 Auto complete for directory and filenames: `Tab`
 
@@ -71,7 +71,7 @@ Type `q` to quit less
 
 other usage: `ls /dev | less`
 
-####Running Program
+#### Running Program
 
 See all paths: `echo $PATH`
 
@@ -97,7 +97,7 @@ See jobs run in background: `jobs`
 
 Bring one of the jobs (default is recent job) into the foreground: `fg [job_number]`
 
-####Networking Stuff
+#### Networking Stuff
 
 Set your network interface options: 
 > /etc/network/interfaces
@@ -122,7 +122,7 @@ Better:
 _Note that various TCP and UDP po1ts are shown as LISTENING. These are waiting for a connection. Others may
 indicate that they are ESTABLISHED. These have existing connections._
 
-####Building Tools
+#### Building Tools
 
 untar a file 
 > tar xvf [archive.tar]
@@ -157,7 +157,7 @@ Search for topics and the command related to that topic: `apropos network`
 
 Equivalent to the above: `man -k network`
 
-####Shutdown and Reboot
+#### Shutdown and Reboot
 Shutdown and halt: `shutdown -h now`
 
 Shutdown and reboot: `shutdown -r now` or `reboot`
