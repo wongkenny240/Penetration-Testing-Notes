@@ -188,7 +188,7 @@ Example: Pause for 4 seconds between each iteration
 
 Note: Prepend command with@ to turn off echoing of command
 
-####Windows Registry Basics
+#### Windows Registry Basics
 
 | Name | Abbr |Content |
 | :--- | :--- | :--- |
@@ -198,11 +198,11 @@ Note: Prepend command with@ to turn off echoing of command
 | HKEY\_USERS | HKU | Settings and configuration for all users on the computer; the information in HKCU is copied from this hive when the user logs in. |
 | HKEY\_CURRENT\_CONFIG | N/A | Hardware information about the PC’s resources and configuration. |
 
-####Add a new startup application (e.g. trojan)
+#### Add a new startup application (e.g. trojan)
 >[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run]
 
 
-####PowerShell Basics
+#### PowerShell Basics
 
 Cmdlets are little programs that let you get stuff done
 Get a list of all cmdlets:
