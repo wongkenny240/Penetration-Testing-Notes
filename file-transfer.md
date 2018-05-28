@@ -4,11 +4,11 @@ File can either be transferred by:
 * Push file to target
 * Have the target to pull file back
 
-###<span style="color:green">HTTP</span>
+### <span style="color:green">HTTP</span>
 
 **On attacker machine**:
 
-####<span style="color:green">Apache</span>
+#### <span style="color:green">Apache</span>
 
 copy file to `/var/www/html/`
 
@@ -17,7 +17,7 @@ Start Apache Server
 > /etc/init.d/apache2 start
 
 
-####<span style="color:green">Python</span>
+#### <span style="color:green">Python</span>
 
 By running below, current directory will be accessible over HTTP
 
@@ -35,9 +35,9 @@ or use cmd.exe to trigger IE
 > cd Program Files\Internet Explorer
 > start iexplore.exe [http://ip address/file]
 
-###<span style="color:green">FTP</span>
+### <span style="color:green">FTP</span>
 
-####vsftpd/pytftpd
+#### vsftpd/pytftpd
 
 **On attacker machine**:
 
@@ -52,7 +52,7 @@ default port is 2121
 
 `-w` can grant the user write access
 
-####Metasploit
+#### Metasploit
 
 Metasploit has an ftp module `auxiliary/server/ftp`
 
