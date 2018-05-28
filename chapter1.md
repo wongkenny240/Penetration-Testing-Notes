@@ -139,7 +139,7 @@ IP protocol scan
 
 * determine which IP protocols (TCP, ICMP, IGMP) are supported by target machines
 
-###Other scanning tools
+### Other scanning tools
 ***Superscan (Active)*** is connect-based port scanning software designed to detect open TCP and UDP ports on a target computer, determine which services are running on those ports, and run queries such as whois, ping, ICMP traceroute, and Hostname lookups.
 
 ***NBTScan (Active)*** is a command-line tool that scans for open NETBIOS nameservers on a local or remote TCP/IP network, and this is a first step in finding of open shares.
