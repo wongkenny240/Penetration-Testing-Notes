@@ -1,4 +1,4 @@
-#Windows Basics
+# Windows Basics
 
 Check user identity: `whoami`
 
@@ -10,7 +10,7 @@ Print out file content: `type file.txt`
 
 Grep: `findstr file.txt`
 
-####Windows CMD Basic
+#### Windows CMD Basic
 
 ##### (1) Displaying and Searching files
 
@@ -159,7 +159,7 @@ List of valid type:
 * If service start_type is disabled
 > sc config [service_name] start=demand
 
-#####(9) Loop
+##### (9) Loop
 * Counter
 > for / L %i in ([start],[step] , [stop]) do [command]
 
@@ -172,7 +172,7 @@ Normal loop
 
 
 
-#####(10) Run Multiple Commands
+##### (10) Run Multiple Commands
 * Run Multiple Commands
 > [command 1] & [command 2]
 
