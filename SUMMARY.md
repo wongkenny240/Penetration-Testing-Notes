@@ -49,12 +49,14 @@
 * [DNS Spoofing](dns-spoofing.md)
 
 ## Web Application Penetration Testing
+
 * [XSS](xss.md)
 * [SQL Injection](sql-injection.md)
 * [Command Injection](command-injection.md)
 * [Cross-Site Request Forgery \(CSRF\)](cross-site-request-forgery-csrf.md)
 * [Path Traversal](path-traversal.md)
-
+* [Heartbleed](heartbleed.md)
+* [Shellshock](shellshock.md)
 
 
 ## Appendix
