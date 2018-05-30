@@ -60,6 +60,7 @@ For some filter, it only perform once on the string and not recursively. It can 
 ### How to exploit an XSS
 
 Source:
+
 https://www.owasp.org/index.php/Cross-site_Scripting_(XSS)
 
 [https://labs.detectify.com/2012/11/07/how-to-exploit-an-xss/](https://labs.detectify.com/2012/11/07/how-to-exploit-an-xss/)
