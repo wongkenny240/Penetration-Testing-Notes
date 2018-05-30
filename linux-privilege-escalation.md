@@ -1,6 +1,6 @@
-#Post Exploitation - Linux
+# Post Exploitation - Linux
 
-####Information Gathering
+#### Information Gathering
 
 Key information
 * OS release
@@ -11,7 +11,7 @@ Key information
 
 
 OS release:
->lsb_release -a
+> lsb_release -a
 
 Kernel version
 > uname -a
@@ -31,7 +31,7 @@ Pop a shell
 > !sh
 
 
-####Create an exploit file
+#### Create an exploit file
 > touch exploit.c
 > vim exploit.c
 
