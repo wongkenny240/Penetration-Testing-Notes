@@ -50,9 +50,36 @@ For some filter, it only perform once on the string and not recursively. It can 
 ```
 
 ### Stored XSS
+Stored XSS occurs when a web application gathers input from a user which might be malicious, and then stores that input in a data store for later use. 
+
+#### Typical Flow of Stored XSS Attack
+
+* Attacker stores malicious code into the vulnerable page
+* User authenticates in the application
+* User visits vulnerable page
+* Malicious code is executed by the user's browser
+
+#### How to Discover?
 
 
 ### DOM-based XSS
+
+The DOM, or Document Object Model, is the structural format used to represent documents in a browser.
+
+For example, the page contains javascript that takes in user-input and change the content of the page.
+
+It has nothing to deal with the server.
+
+```
+<script>
+function displayGreeting(name){
+    if (name != ''){
+        document.getElementById('greeting').innerHTML = "Hello " + name + "!"
+    }
+}
+</script>
+```
+
 
 
 
