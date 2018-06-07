@@ -6,7 +6,7 @@
 
 
 ```
-$ welcome() {echo "Hi $User}
+$ welcome() {echo "Hi $USER"; }
 ```
 
 Type welcome:
@@ -23,7 +23,7 @@ Output:
 
 
 ```
-$export hellofunc="() {echo "Hi $User}"
+$export hellofunc="() {echo "Hi $USER"}"
 
 ```
 
