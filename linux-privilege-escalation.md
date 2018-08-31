@@ -16,6 +16,17 @@ OS release:
 Kernel version
 > uname -a
 
+Is there a printer?
+> lpstat -a
+
+Application & Services
+> ps -aux
+
+a = show processes for all users
+u = display the process's user/owner
+x = also show processes not attached to a terminal
+
+
 Direction on Privilege Escalation
 * Exploit against system
 * Exploit against services
