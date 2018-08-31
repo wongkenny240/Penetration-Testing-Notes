@@ -22,8 +22,11 @@ Is there a printer?
 
 #### Application & Services
 > ps -aux
+
 > ps -ef
+
 > top
+
 > cat /etc/service
 
 a = show processes for all users
@@ -34,15 +37,22 @@ x = also show processes not attached to a terminal
 Determine which services are running as root
 
 > ps aux | grep root
+
 > ps -ef | grep root
 
 Determine what applications are installed and their version
 > ls -alh /usr/bin/
+
 > ls -alh /sbin/
+
 > dpkg -l
+
 > rpm -qa
+
 > ls -alh /var/cache/apt/archivesO
+
 > ls -alh /var/cache/yum/
+
 > yum list | grep installed
 
 
