@@ -153,6 +153,20 @@ List All
 
 > sudo -l
 
+##### List Sudoers
+
+> cat /etc/sudoers
+
+##### Attempt to display sensitive files
+
+> cat /etc/passwd
+
+> cat /etc/group
+
+> cat /etc/shadow
+
+> ls -alh /var/mail/
+
 #### Direction on Privilege Escalation
 * Exploit against system
 * Exploit against services
