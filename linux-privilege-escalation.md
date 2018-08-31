@@ -34,13 +34,13 @@ u = display the process's user/owner
 x = also show processes not attached to a terminal
 
 
-Determine which services are running as root
+##### Determine which services are running as root
 
 > ps aux | grep root
 
 > ps -ef | grep root
 
-Determine what applications are installed and their version
+##### Determine what applications are installed and their version
 > ls -alh /usr/bin/
 
 > ls -alh /sbin/
@@ -55,7 +55,7 @@ Determine what applications are installed and their version
 
 > yum list | grep installed
 
-Determine versions of important applications
+##### Determine versions of important applications
 > gcc -v
 
 > mysql --version
@@ -68,7 +68,7 @@ Determine versions of important applications
 
 > perl -v
 
-Review system configurations
+##### Review system configurations
 
 Syslog Configuration:
 > cat /etc/syslog.conf
@@ -102,9 +102,20 @@ cat /etc/inetd.conf
 List All
 > ls -aRl /etc/ | awk '$1 ~ /^.*r.*/'
 
-Determine scheduled jobs
+##### Determine scheduled jobs
 
-
+`crontab -l
+ls -alh /var/spool/cron
+ls -al /etc/ | grep cron
+ls -al /etc/cron*
+cat /etc/cron*
+cat /etc/at.allow
+cat /etc/at.deny
+cat /etc/cron.allow
+cat /etc/cron.deny
+cat /etc/crontab
+cat /etc/anacrontab
+cat /var/spool/cron/crontabs/root`
 
 
 
