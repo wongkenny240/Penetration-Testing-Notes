@@ -55,6 +55,62 @@ Determine what applications are installed and their version
 
 > yum list | grep installed
 
+Determine versions of important applications
+> gcc -v
+
+> mysql --version
+
+> java -version
+
+> python --version
+
+> ruby -v
+
+> perl -v
+
+Review system configurations
+
+Syslog Configuration:
+> cat /etc/syslog.conf
+
+Web Server Configurations:
+> cat /etc/chttp.conf
+
+> cat /etc/lighttpd.conf
+
+> cat /etc/apache2/apache2.conf
+
+> cat /etc/httpd/conf/httpd.conf
+
+> cat /opt/lampp/etc/httpd.conf
+
+PHP Configuration:
+
+> /etc/php5/apache2/php.ini
+
+Printer (cupsd) Configuration:
+
+> cat /etc/cups/cupsd.conf
+
+MySQL Configuration:
+
+> cat /etc/my.conf
+
+Inetd Configuration:
+cat /etc/inetd.conf
+
+List All
+> ls -aRl /etc/ | awk '$1 ~ /^.*r.*/'
+
+Determine scheduled jobs
+
+
+
+
+
+
+#### Communications and Networking
+
 
 #### Direction on Privilege Escalation
 * Exploit against system
