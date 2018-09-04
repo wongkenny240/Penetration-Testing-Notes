@@ -15,6 +15,9 @@ Run fgdump to dump local hash
 #### Mimikatz
 > `PS C:\temp\mimikatz> .\mimikatz`
 
+- get debug rights (this or Local System rights is required for many Mimikatz commands).
+- by default, the Administrators group has Debug rights. Debug still has to be “activated” by running “privilege::debug”.
+
 >  `mimikatz # privilege::debug`
 
 - lists all available provider credentials. This usually shows recently logged on user and computer credentials.
