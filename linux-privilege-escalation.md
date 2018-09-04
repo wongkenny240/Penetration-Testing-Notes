@@ -41,8 +41,7 @@ x = also show processes not attached to a terminal
 > ps -ef | grep root
 
 ##### Determine what applications are installed and their version
-> ls -alh /usr/bin/
-
+> ls -alh /usr/bin/ \n
 > ls -alh /sbin/
 
 > dpkg -l
