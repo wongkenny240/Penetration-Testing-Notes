@@ -71,9 +71,9 @@ Similarly the two commands below can be used to grep the registry for keywords, 
 
 > `PS C:\Users\User > Find-AllVulns`
 
-##Tools
+## Tools
 
-####PowerUp
+#### PowerUp
 
 
 ##### Privilege Escalation Table \(Due to lack of sufficient patching\)
