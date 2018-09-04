@@ -1,65 +1,65 @@
-# Summary
-
-## Introduction
+# Table of contents
 
 * [Introduction](README.md)
 
+## Introduction
+
+* [Introduction](introduction/readme.md)
 
 ## Basics
 
-* [Background Information and Process](background-information-and-process.md)
-* [Linux Basics](linux-basics.md)
-* [Windows Basics](windows-basics.md)
-* [Network Basics](network-basics.md)
-* [Web Basics](web-basics.md)
+* [Background Information and Process](basics/background-information-and-process.md)
+* [Linux Basics](basics/linux-basics.md)
+* [Windows Basics](basics/windows-basics.md)
+* [Network Basics](basics/network-basics.md)
+* [Web Basics](basics/web-basics.md)
 
 ## Reconnaissance
 
-* [Information Gathering](chapter1.md)
-* [Vulnerability Scanning](vulnerability-scanning.md)
+* [Information Gathering](reconnaissance/chapter1.md)
+* [Vulnerability Scanning](reconnaissance/vulnerability-scanning.md)
 
 ## Exploit
 
-* [Exploit](exploit.md)
-* [Metasploit](metasploit.md)
-* [MSFvenom](msfvenom.md)
-* [Evading Anti-Virus](evading-anti-virus.md)
+* [Exploit](exploit/exploit.md)
+* [Metasploit](exploit/metasploit.md)
+* [MSFvenom](exploit/msfvenom.md)
+* [Evading Anti-Virus](exploit/evading-anti-virus.md)
 
 ## Post Exploit
 
-* [Meterpreter](meterpreter.md)
-* [Windows Privilege Escalation](windows-privilege-escalation.md)
-* [Linux Privilege Escalation](linux-privilege-escalation.md)
-* [Pivoting](pivoting.md)
-* [Netcat](netcat.md)
-* [File Transfer](file-transfer.md)
+* [Meterpreter](post-exploit/meterpreter.md)
+* [Windows Privilege Escalation](post-exploit/windows-privilege-escalation.md)
+* [Linux Privilege Escalation](post-exploit/linux-privilege-escalation.md)
+* [Pivoting](post-exploit/pivoting.md)
+* [Netcat](post-exploit/netcat.md)
+* [File Transfer](post-exploit/file-transfer.md)
 
 ## Password Attack
 
-* [Password Attacks](password-attacks.md)
-* [Cryptography Basics ](cryptography-basics.md)
-* [Online Attack](password-cracking.md)
-* [Offline Attack](offline-attack.md)
+* [Password Attacks](password-attack/password-attacks.md)
+* [Cryptography Basics](password-attack/cryptography-basics.md)
+* [Online Attack](password-attack/password-cracking.md)
+* [Offline Attack](password-attack/offline-attack.md)
 
 ## Network Attack
 
-* [ARP Spoofing](arp-spoofing.md)
-* [Wireless Encryption](wireless-encryption.md)
-* [Wifi Cracking](wifi-cracking.md)
-* [DNS Spoofing](dns-spoofing.md)
+* [ARP Spoofing](network-attack/arp-spoofing.md)
+* [Wireless Encryption](network-attack/wireless-encryption.md)
+* [Wifi Cracking](network-attack/wifi-cracking.md)
+* [DNS Spoofing](network-attack/dns-spoofing.md)
 
 ## Web Application Penetration Testing
 
-* [XSS](xss.md)
-* [SQL Injection](sql-injection.md)
-* [Command Injection](command-injection.md)
-* [Cross-Site Request Forgery \(CSRF\)](cross-site-request-forgery-csrf.md)
-* [Path Traversal](path-traversal.md)
-* [Heartbleed](heartbleed.md)
-* [Shellshock](shellshock.md)
-
+* [XSS](web-application-penetration-testing/xss.md)
+* [SQL Injection](web-application-penetration-testing/sql-injection.md)
+* [Command Injection](web-application-penetration-testing/command-injection.md)
+* [Cross-Site Request Forgery \(CSRF\)](web-application-penetration-testing/cross-site-request-forgery-csrf.md)
+* [Path Traversal](web-application-penetration-testing/path-traversal.md)
+* [Heartbleed](web-application-penetration-testing/heartbleed.md)
+* [Shellshock](web-application-penetration-testing/shellshock.md)
 
 ## Appendix
 
-* [Glossary of Terms](summary-of-attack.md)
+* [Glossary of Terms](appendix/summary-of-attack.md)
 
