@@ -74,7 +74,7 @@ Brute-force HTTP Form POST using a username list to try different usernames
 
 ![Username List, Password List](../.gitbook/assets/image%20%282%29.png)
 
-### [http://www.hackingarticles.in/5-ways-to-hack-smb-login-password/](http://www.hackingarticles.in/5-ways-to-hack-smb-login-password/)
+[http://www.hackingarticles.in/5-ways-to-hack-smb-login-password/](http://www.hackingarticles.in/5-ways-to-hack-smb-login-password/)
 
 ### Ncrack
 
