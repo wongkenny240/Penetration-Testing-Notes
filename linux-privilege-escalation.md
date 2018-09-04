@@ -135,6 +135,10 @@ List All
 
 
 #### Confidential Information & Users
+
+##### Identify current user and users in the system
+
+
 > id
 
 > who
@@ -166,6 +170,38 @@ List All
 > cat /etc/shadow
 
 > ls -alh /var/mail/
+
+##### Check for anything interesting in home directories
+
+> ls -ahlR /root/
+
+> ls -ahlR /home/
+
+##### Check for hardcoded passwords in scripts, databases or configuration files
+
+> cat /var/apache2/config.inc
+
+> cat /var/lib/mysql/mysql/user.MYD 
+
+> cat /root/anaconda-ks.cfg
+
+**Dump all Local, LDAP, NIS, etc password hashes
+
+> getent passwd
+
+##### Check user history for credentials and activity
+
+> cat ~/.bash_history
+
+> cat ~/.nano_history
+
+> cat ~/.atftp_history
+
+> cat ~/.mysql_history 
+
+> cat ~/.php_history
+
+
 
 #### Direction on Privilege Escalation
 * Exploit against system
