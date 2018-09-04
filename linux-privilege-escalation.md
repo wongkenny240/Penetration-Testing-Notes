@@ -12,25 +12,27 @@ Key information
 #### OS Version
 
 OS release:
-> lsb_release -a
+> `lsb_release -a`
 
 Kernel version
-> uname -a
+> `uname -a`
 
 Is there a printer?
-> lpstat -a
+> `lpstat -a`
 
 #### Application & Services
-> ps -aux
+> `ps -aux`
 
-> ps -ef
+> `ps -ef`
 
-> top
+> `top`
 
-> cat /etc/service
+> `cat /etc/service`
 
 a = show processes for all users
+
 u = display the process's user/owner
+
 x = also show processes not attached to a terminal
 
 
