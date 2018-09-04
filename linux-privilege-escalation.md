@@ -42,6 +42,7 @@ x = also show processes not attached to a terminal
 
 ##### Determine what applications are installed and their version
 > ls -alh /usr/bin/
+
 > ls -alh /sbin/
 
 > dpkg -l
