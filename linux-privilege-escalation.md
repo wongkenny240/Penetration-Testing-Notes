@@ -38,9 +38,9 @@ x = also show processes not attached to a terminal
 
 ##### Determine which services are running as root
 
-> ps aux | grep root
+> `ps aux | grep root`
 
-> ps -ef | grep root
+> `ps -ef | grep root`
 
 ##### Determine what applications are installed and their version
 > ls -alh /usr/bin/
@@ -76,59 +76,59 @@ Syslog Configuration:
 > cat /etc/syslog.conf
 
 Web Server Configurations:
-> cat /etc/chttp.conf
+> `cat /etc/chttp.conf`
 
-> cat /etc/lighttpd.conf
+> `cat /etc/lighttpd.conf`
 
-> cat /etc/apache2/apache2.conf
+> `cat /etc/apache2/apache2.conf`
 
-> cat /etc/httpd/conf/httpd.conf
+> `cat /etc/httpd/conf/httpd.conf`
 
-> cat /opt/lampp/etc/httpd.conf
+> `cat /opt/lampp/etc/httpd.conf`
 
 PHP Configuration:
 
-> /etc/php5/apache2/php.ini
+> `/etc/php5/apache2/php.ini`
 
 Printer (cupsd) Configuration:
 
-> cat /etc/cups/cupsd.conf
+> `cat /etc/cups/cupsd.conf`
 
 MySQL Configuration:
 
-> cat /etc/my.conf
+> `cat /etc/my.conf`
 
 Inetd Configuration:
-cat /etc/inetd.conf
+> `cat /etc/inetd.conf`
 
 List All
-> ls -aRl /etc/ | awk '$1 ~ /^.*r.*/'
+> `ls -aRl /etc/ | awk '$1 ~ /^.*r.*/'`
 
 ##### Determine scheduled jobs
 
-> crontab -l
+> `crontab -l`
 
-> ls -alh /var/spool/cron
+> `ls -alh /var/spool/cron`
 
-> ls -al /etc/ | grep cron
+> `ls -al /etc/ | grep cron`
 
-> ls -al /etc/cron*
+> `ls -al /etc/cron*`
 
-> cat /etc/cron*
+> `cat /etc/cron*`
 
-> cat /etc/at.allow
+> `cat /etc/at.allow`
 
-> cat /etc/at.deny
+> `cat /etc/at.deny`
 
-> cat /etc/cron.allow
+> `cat /etc/cron.allow`
 
-> cat /etc/cron.deny
+> `cat /etc/cron.deny`
 
-> cat /etc/crontab
+> `cat /etc/crontab`
 
-> cat /etc/anacrontab
+> `cat /etc/anacrontab`
 
-> cat /var/spool/cron/crontabs/root`
+> `cat /var/spool/cron/crontabs/root`
 
 
 
