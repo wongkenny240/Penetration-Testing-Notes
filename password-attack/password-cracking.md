@@ -74,7 +74,7 @@ Brute-force HTTP Form POST using a username list to try different usernames
 
 ![Username List, Password List](../.gitbook/assets/image%20%282%29.png)
 
-[http://www.hackingarticles.in/5-ways-to-hack-smb-login-password/](http://www.hackingarticles.in/5-ways-to-hack-smb-login-password/)
+{% embed data="{\"url\":\"http://www.hackingarticles.in/5-ways-to-hack-smb-login-password/\",\"type\":\"link\",\"title\":\"5 Ways to Hack SMB Login Password\",\"description\":\"In this article, we will learn how to gain control over our victim’s PC through SMB Port. There are various ways to do it and let take time and learn all those because different circumstances call for different measure. xHydra This is the graphical version to apply dictionary attack via SMB port to hack a... Continue reading →\",\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://4.bp.blogspot.com/-1l4jtN0-RVs/Wp7QKE\_WPPI/AAAAAAAAVB8/ID1QQcSz4IUkOIVPvQqWMKMBnjk6A7uVwCEwYBhgL/s1600/3.png\",\"width\":482,\"height\":546,\"aspectRatio\":1.1327800829875518}}" %}
 
 ### Ncrack
 
