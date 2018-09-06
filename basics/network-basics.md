@@ -28,11 +28,11 @@ This involves a SYN sent to an TCP open port that has a service bound to it, typ
 * Server returns SYN/ACK
 * Client sends ACK
 
-![](https://github.com/wongkenny240/Penetration-Testing-Notes/tree/46f291a769efee2fa73a30a1e957eae1260ee5a5/assets/2018-03-07%2017_49_56-Start.png)
+![](../assets/2018-03-07%2017_49_56-Start.png)
 
 ## Filtered ports or when the firewall drops a packet
 
-![](https://github.com/wongkenny240/Penetration-Testing-Notes/tree/46f291a769efee2fa73a30a1e957eae1260ee5a5/assets/2018-03-07%2017_50_28-Start.png)![](https://github.com/wongkenny240/Penetration-Testing-Notes/tree/46f291a769efee2fa73a30a1e957eae1260ee5a5/assets/2018-03-07%2017_50_17-Start.png)
+![](../assets/2018-03-07%2017_50_28-Start.png)![](../assets/2018-03-07%2017_50_17-Start.png)
 
 * no service running on the target port
 * firewall block access
