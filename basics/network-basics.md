@@ -32,7 +32,9 @@ This involves a SYN sent to an TCP open port that has a service bound to it, typ
 
 ## Filtered ports or when the firewall drops a packet
 
-![](../assets/2018-03-07%2017_50_28-Start.png)![](../assets/2018-03-07%2017_50_17-Start.png)
+![](../assets/2018-03-07%2017_50_28-Start.png)
+
+![](../assets/2018-03-07%2017_50_17-Start.png)
 
 * no service running on the target port
 * firewall block access
