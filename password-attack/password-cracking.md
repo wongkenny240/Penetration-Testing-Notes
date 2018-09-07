@@ -91,7 +91,9 @@ hydra -L [username list] -P [password list] 192.168.1.10 [form parameters] [fail
 
 #### SMB Bruteforce
 
-> `hydra –L /root/Desktop/user.txt -P /root/Desktop/pass.txt 192.168.1.118 smb`
+```
+hydra –L /root/Desktop/user.txt -P /root/Desktop/pass.txt 192.168.1.118 smb
+```
 
 ![Single Target , Port and Protocol](../.gitbook/assets/image.png)
 
