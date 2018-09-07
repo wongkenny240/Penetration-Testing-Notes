@@ -8,7 +8,12 @@ Crunch is a tool that can generate custom wordlist with defined character-sets a
 
 > `crunch [min] [max] [characterset] -t [pattern] -o [output filename]`
 
-min = minimum password length max = maximum password length characterset = The character set to be used in generating the passwords -t = patten, for example if you knew that your target's birthday was 0728 \(July 28th\) and you suspected they used their birthday in their password, you could generate a password list that ended with 0728 by giving crunch the pattern @@@@@@@0728.
+```
+min = minimum password length 
+max = maximum password length 
+characterset = The character set to be used in generating the passwords 
+-t = patten, for example if you knew that your target's birthday was 0728 (July 28th) and you suspected they used their birthday in their password, you could generate a password list that ended with 0728 by giving crunch the pattern @@@@@@@0728.
+```
 
 > `./crunch 1 1 -p pen test lab`
 
