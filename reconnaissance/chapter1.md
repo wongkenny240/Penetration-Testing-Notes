@@ -80,7 +80,9 @@ run help menu of specific script: `--script-help <nameOfScript>`
 
 TCP SYN Scan
 
-> -sS
+```
+ -sS
+```
 
 * half-open scanning
 * send a SYN packet and wait for response
@@ -90,7 +92,9 @@ TCP SYN Scan
 
 TCP connect scan
 
-> -sT
+```
+ -sT
+```
 
 * complete conneciton
 * decent IDS will catch/ system log will record
@@ -98,7 +102,9 @@ TCP connect scan
 
 UDP scan
 
-> sU
+```
+ -sU
+```
 
 * DNS \(53\), SNMP \(161/162\), DHCP \(67/68\) are common UDP port
 * ICMP port unreachable error \(type 3, code 3\) -&gt; **closed**
@@ -108,7 +114,9 @@ UDP scan
 
 XMAS scan
 
-> -sX
+```
+ -sX
+```
 
 * send a packet with FIN, URG, PSH flags
 * no response -&gt; **open** \(ignore the packet\)
@@ -118,14 +126,18 @@ XMAS scan
 
 FIN scan
 
-> -sF
+```
+ -sF
+```
 
 * send a packet with FIN only
 * same response and limitation as XMAS
 
 NULL scan
 
-> -sN
+```
+ -sN
+```
 
 * send a packet with no flags set.
 
@@ -136,7 +148,9 @@ IDLE scan
 
 IP protocol scan
 
-> -sO
+```
+ -sO
+```
 
 * determine which IP protocols \(TCP, ICMP, IGMP\) are supported by target machines
 
