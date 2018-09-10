@@ -77,7 +77,7 @@ Grep: `findstr file.txt`
   dir /b /s [directory][file]
 ```
 
-e.g. dir /b /s %systemroot%\hosts
+e.g. `dir /b /s %systemroot%\hosts`
 
 ### \(4\) Managing Accounts and Groups and Deleting users
 
@@ -108,7 +108,7 @@ e.g. dir /b /s %systemroot%\hosts
 * Put the user in admin group
 
 ```
-  net localgroup administrators \[logon\_name\] /add
+  net localgroup administrators [logon_name] /add
 ```
 
 * Remove a user from a group
@@ -192,77 +192,83 @@ List of valid type:
 
 * Setting up a session with a target
 
-  > net use \\\[targetIP\] \[password\] /u: \[user\]
+```
+   net use \\[targetIP] [password] /u: [user]
+```
 
 * Mount a share on a target
-
-  > net use \* \\\[targetIP\) \[share\]\[password\] /u : \[user\]
-
+```
+   net use * \\[targetIP] [share] [password] /u:[user]
+```
 * Drop a session
 
-  > net use \\\[targetIP\] /del
+```
+   net use \\[targetIP] /del
+```
 
 * Drop all session
 
-  > net use \* /del
+```
+   net use * /del
+```
 
 ### \(8\) Controlling Services with sc
 
 * List all running services
-
-  > sc query
-
+```
+  sc query
+```
 * List all installed services
-
-  > sc query state=all
-
+```
+  sc query state=all
+```
 * Show a particular service's status
-
-  > sc qc \[service\_name\]
-
+```
+  sc qc [service_name]
+```
 * List all running services on _**remote system**_
-
-  > sc \\\[targetIP\] query
-
+```
+  sc \\[targetIP] query
+```
 * Start a service
-
-  > sc start \[service\_name\]
-
+```
+  sc start [service_name]
+```
 * Stop a service
-
-  > sc stop \[service\_name\]
-
+```
+  sc stop [service_name]
+```
 * If service start\_type is disabled
-
-  > sc config \[service\_name\] start=demand
-
+```
+  sc config [service_name] start=demand
+```
 ### \(9\) Loop
 
 * Counter
-
-  > for / L %i in \(\[start\],\[step\] , \[stop\]\) do \[command\]
-
+```
+  for /L %i in ([start],[step],[stop]) do [command]
+```
 Example Endless loop
-
-> for /L %i in \(1 , 0 , 2\) do echo Hello
-
+```
+for /L %i in (1,0,2) do echo Hello
+```
 Normal loop
-
-> for /L %i in \(1 , 1,255\) do echo %i
-
+```
+for /L %i in (1,1,255) do echo %i
+```
 ### \(10\) Run Multiple Commands
 
 * Run Multiple Commands
-
-  > \[command 1\] & \[command 2\]
-
+```
+ [command 1] & [command 2]
+```
 * Run command1, and run command2 only if command1 succeeds without error
-
-  > \[command 1\] && \[command 2\]
-
+```
+ [command 1] && [command 2]
+```
 Example: Pause for 4 seconds between each iteration
 
-![](https://github.com/wongkenny240/Penetration-Testing-Notes/tree/547368387df48ce5cbf17ea2f16961a2eeb25a0f/assets/2018-04-23%2016_37_38-Start.png)
+![](../assets/2018-04-23%2016_37_38-Start.png)
 
 Note: Prepend command with@ to turn off echoing of command
 
@@ -283,27 +289,29 @@ Note: Prepend command with@ to turn off echoing of command
 ## PowerShell Basics
 
 Cmdlets are little programs that let you get stuff done Get a list of all cmdlets:
-
-> get-command
-
+```
+  get-command
+```
 Find a list of cmdlets
 
-> get-command set\*
->
-> get-command \*process
+```
+ get-command set*
+ get-command *process
+```
 
 To list all aliases
-
-> alias
+```
+ alias
+```
 
 Expand an alias into a full name
-
-> alias gcm
-
+```
+ alias gcm
+```
 Get aliases for a cmdlet
-
-> get-alias-definition \[cmdlet\]
-
+```
+ get-alias-definition [cmdlet]
+```
 Help for a cmdlet
 
 > help \[alias\]
