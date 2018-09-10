@@ -268,7 +268,7 @@ for /L %i in (1,1,255) do echo %i
 ```
 Example: Pause for 4 seconds between each iteration
 
-![](../assets/2018-04-23%2016_37_38-Start.png)
+![](../assets/2018-04-23 2016_37_38-Start.png)
 
 Note: Prepend command with@ to turn off echoing of command
 
