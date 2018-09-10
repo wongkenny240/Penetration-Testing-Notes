@@ -16,39 +16,52 @@ Grep: `findstr file.txt`
 
 * Display
 
-  > type \[file\]
+```
+   type [file]
+```
 
 * Multiple files
-
-  > type \*. txt or type \(filel\] \(file2\]
-
+```
+   type *. txt 
+   type [filel] [file2]
+```
 * Display one page at a time
 
-  > more \[file\]
+```  
+  more [file]
+```
 
 * Searching for a string within a file:
 
-  > type \[file\] \| find /i "\[string\]"
+```
+  type [file] | find /i "[string]"
+```
 
 * Searching for regular expressions
 
-  > type \(file\] I findstr \[regex\]
+```
+ type [file] | findstr [regex]
+```
 
 ### \(2\) Environment Variables
 
 * see all environment variable
 
-  > set
-
+```
+  set
+```
 * see a specific variable
 
-  > set \[variable\_name\]
+```
+  set [variable_name]
+```
 
 * Some important one:
 
-  > set username
-  >
-  > set path
+```
+  set username
+  set path
+```
 
 ### \(3\) Searching the File System
 
@@ -317,5 +330,5 @@ Searching for Files or Directories
 
 > `get-childitem -recurse [dir] [string] | %{echo $_.fullname}`
 
-![](https://github.com/wongkenny240/Penetration-Testing-Notes/tree/547368387df48ce5cbf17ea2f16961a2eeb25a0f/assets/2018-05-04%2011_42_02-Start.png)
+![](../assets/2018-05-04%2011_42_02-Start.png)
 
