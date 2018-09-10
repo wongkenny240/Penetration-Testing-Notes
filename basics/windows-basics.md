@@ -188,6 +188,7 @@ List of valid type:
 * For remote machine \(Requires admin-level SMB session\)
 
   > reg add \\ \[MachineName\] \[KeyName\] /v \[ValueName\] /t \[type\] /d \[Data\]
+  
 
 ### \(7\) SMB Sessions
 
@@ -243,31 +244,43 @@ List of valid type:
 ```
   sc config [service_name] start=demand
 ```
+
 ### \(9\) Loop
 
 * Counter
+
 ```
   for /L %i in ([start],[step],[stop]) do [command]
 ```
+
 Example Endless loop
+
 ```
 for /L %i in (1,0,2) do echo Hello
 ```
+
 Normal loop
+
 ```
 for /L %i in (1,1,255) do echo %i
 ```
+
 ### \(10\) Run Multiple Commands
 
 * Run Multiple Commands
+
 ```
  [command 1] & [command 2]
 ```
+
 * Run command1, and run command2 only if command1 succeeds without error
+
 ```
  [command 1] && [command 2]
 ```
+
 Example: Pause for 4 seconds between each iteration
+
 
 ![](../assets/2018-04-23 2016_37_38-Start.png)
 
@@ -290,9 +303,11 @@ Note: Prepend command with@ to turn off echoing of command
 ## PowerShell Basics
 
 Cmdlets are little programs that let you get stuff done Get a list of all cmdlets:
+
 ```
   get-command
 ```
+
 Find a list of cmdlets
 
 ```
@@ -301,22 +316,29 @@ Find a list of cmdlets
 ```
 
 To list all aliases
+
 ```
  alias
 ```
 
 Expand an alias into a full name
+
 ```
  alias gcm
 ```
+
 Get aliases for a cmdlet
+
 ```
  get-alias-definition [cmdlet]
 ```
+
 Help for a cmdlet
+
 ```
  help [alias]
 ```
+
 More details/option for help:
 
 ```
@@ -334,10 +356,13 @@ TAB: for auto-complete
 F7 key: shows you shell history ENTER for rerun, left or right to retype, ESC to get out of it, ALT + F7 to clear it
 
 Display history:
+
 ```
  get-history
 ```
+
 Or
+
 ```
  history
 ```
