@@ -67,11 +67,15 @@ Grep: `findstr file.txt`
 
 * List all directories
 
-  > dir /b /s
+```
+  dir /b /s
+```
 
 * Search for a file in the file system
 
-  > dir /b /s \[directory\]\[file\]
+```
+  dir /b /s [directory][file]
+```
 
 e.g. dir /b /s %systemroot%\hosts
 
@@ -79,31 +83,45 @@ e.g. dir /b /s %systemroot%\hosts
 
 * List local users
 
-  > net user
+```
+  net user
+```
 
 * List local groups
 
-  > net localgroup
+```
+  net localgroup
+```
 
 * List members of local admin group
 
-  > net localgroup administrators
+```
+  net localgroup administrators
+```
 
 * Add user
 
-  > net user \[logon\_ name\] \[password\] /add
+```
+  net user [logon_ name] [password] /add
+```
 
 * Put the user in admin group
 
-  > net localgroup administrators \[logon\_name\] /add
+```
+  net localgroup administrators \[logon\_name\] /add
+```
 
 * Remove a user from a group
 
-  > net localgroup \[group\] \[logon\_name\] /del
+```
+  net localgroup [group] [logon_name] /del
+```
 
 * Delete a account
 
-  > net user \[logon\_name\] /del
+```
+  net user [logon_name] /del
+```
 
 ### \(5\) Local firewall administration
 
