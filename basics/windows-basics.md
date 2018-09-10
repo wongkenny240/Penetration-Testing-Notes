@@ -147,6 +147,7 @@ e.g. `dir /b /s %systemroot%\hosts`
 ```
   netsh advfirewall set allprofiles state off
 ```
+
 ### \(6\) Interacting with Registry
 
 * Read a reg key
