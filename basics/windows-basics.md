@@ -127,30 +127,36 @@ e.g. dir /b /s %systemroot%\hosts
 
 * See the configuration of the firewall
 
-  > netsh advfirewall show allprofiles
+```
+  netsh advfirewall show allprofiles
+```
 
 * Allow a given port inbound
 
-  > netsh advfirewall firewall add rule name="\[Comment\]" dir=in action=allow remoteip=\[yourIPaddress\] protocol=TCP localport=\[port\]
+```
+  netsh advfirewall firewall add rule name="[Comment]" dir=in action=allow remoteip=[yourIPaddress] protocol=TCP localport=[port]
+```
 
 * Delete the firewall rule
 
-  > netsh advfirewall firewall del rule name="\[Comment\]"
+```
+  netsh advfirewall firewall del rule name="[Comment]"
+```
 
 * Disable the firewall
-
-  > netsh advfirewall set allprofiles state off
-
+```
+  netsh advfirewall set allprofiles state off
+```
 ### \(6\) Interacting with Registry
 
 * Read a reg key
-
-  > reg query \[KeyName\]
-
+```
+  reg query [KeyName]
+```
 * Change a reg key
-
-  > reg add \[KeyName\] /v \[ValueName\] /t \[type\] /d \[Data\]
-
+```
+  reg add [KeyName] /v [ValueName] /t [type] /d [Data]
+```
 KeyName: _**HKLM**_, HKCU, HKCR, _**HKU**_, and HKCC e.g. HKLM\Software\MySubkey
 
 ValueName: Specifies the name for the registry key to be added or deleted e.g. AppInfo
@@ -168,11 +174,15 @@ List of valid type:
 * REG\_EXPAND\_SZ
 * Export settings to a reg file
 
-  > reg export \[KeyName\] \[filename.reg\]
+```
+  reg export [KeyName] [filename.reg]
+```
 
 * Import settings from a reg file
 
-  > reg import \[filename.reg\]
+```
+  reg import [filename.reg]
+```
 
 * For remote machine \(Requires admin-level SMB session\)
 
