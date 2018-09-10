@@ -313,12 +313,18 @@ Get aliases for a cmdlet
  get-alias-definition [cmdlet]
 ```
 Help for a cmdlet
-
-> help \[alias\]
-
+```
+ help [alias]
+```
 More details/option for help:
 
-> help \[cmdlet or alias\] -detailed help \[cmdlet or alias\] -examples help \[cmdlet or alias\] -full help \[cmdlet or alias\] -online
+```
+help [cmdlet or alias]
+[cmdlet or alias] -detailed help 
+[cmdlet or alias] -examples help 
+[cmdlet or alias] -full help 
+[cmdlet or alias] -online
+```
 
 TAB: for auto-complete
 
@@ -327,24 +333,29 @@ TAB: for auto-complete
 F7 key: shows you shell history ENTER for rerun, left or right to retype, ESC to get out of it, ALT + F7 to clear it
 
 Display history:
-
-> get-history
-
+```
+ get-history
+```
 Or
-
-> history
+```
+ history
+```
 
 `-whatif` option: to see what command will do
 
 Example:
 
-> `Remove-Item *.txt -whatif`
+```
+Remove-Item *.txt -whatif
+```
 
 Pipeline: pipe **objects** to other command
 
 Example:
 
-> `ls | gm`
+```
+ls | gm
+```
 
 `gm` shows the methods and properties output from a given cmdlet.
 
@@ -352,19 +363,27 @@ ForEach-Object \(%{$\_}\) The `%` take each object piped to it and then run a co
 
 Example:
 
-> `ps -name nc | % {stop-process $_}` `100, 200, 500 | % {$_ * 50}`
+```
+ps -name nc | % {stop-process $_}` `100, 200, 500 | % {$_ * 50}
+```
 
 Where-Object Check the properties of objects, use with -eq \(equal\), -ne \(not equal\), -like \(like with \* wildcard\), -gt, -lt
 
-> `get-service | ? {$_.status -eq "running"}`
+```
+get-service | ? {$_.status -eq "running"}
+```
 
 Select-Object Creates new objects from those passed down the pipeline, with a subset of properties
 
-> `get-service | select servicename,displayname`
+```
+get-service | select servicename,displayname
+```
 
 Searching for Files or Directories
 
-> `get-childitem -recurse [dir] [string] | %{echo $_.fullname}`
+```
+get-childitem -recurse [dir] [string] | %{echo $_.fullname}
+```
 
 ![](../assets/2018-05-04 2011_42_02-Start.png)
 
