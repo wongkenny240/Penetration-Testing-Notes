@@ -330,5 +330,5 @@ Searching for Files or Directories
 
 > `get-childitem -recurse [dir] [string] | %{echo $_.fullname}`
 
-![](../assets/2018-05-04%2011_42_02-Start.png)
+![](../assets/2018-05-04_2011_42_02-Start.png)
 
