@@ -107,3 +107,9 @@ wafw00f https://[IP]:[PORT], "http,https,ssl,soap,http-proxy,http-alt"
 * If PHP is found, check the phpinfo.php file. On occasion hidden credentials will be located at the very bottom of the page
 * Check the /robots.txt file for hidden folders
 * Look for comments in the HTML source code. Programmers sometimes stick usernames, passwords, and other hints in there that may give you a way into the box
+
+## 137/139/445: NetBIOS/SMB
+
+### enum4linux
+
+
