@@ -7,23 +7,43 @@
 
 ### Hack the Box Machines
 Lame
+
 Beep
+
 Bastard
+
 Grandpa/Granny
+
 Mirai
+
 Solidstate
+
 Jeeves
+
 Tally (Much harder than anything on OSCP, but you've gotta get used to windows)
+
 Bashed
+
 Nibbles
+
 Sense
+
 Valentine
+
 Bart (Again, same issue but really get used to windows)
+
 Chatterbox
+
 Popcorn
+
 Haircut
+
 Nineveh
+
 Shocker
+
 Cronos
+
 Arctic
+
 Optimum
