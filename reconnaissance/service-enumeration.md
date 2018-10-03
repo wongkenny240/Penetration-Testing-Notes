@@ -33,3 +33,22 @@ hydra -l username -P password_list.txt 192.168.168.168 -f -v ssh
 ```
 
 ## 80/443/8080: HTTP/HTTPS
+
+### Netcat
+Banner Grabbing
+
+```
+nc -v -n -w1 [IP] [PORT]
+```
+
+### Curl 
+
+```
+curl -i [ip_addr]
+```
+
+### X11 Screenshot
+
+```
+bash ./scripts/x11screenshot.sh [ip_addr]
+```
