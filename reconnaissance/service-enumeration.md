@@ -58,3 +58,13 @@ bash ./scripts/x11screenshot.sh [ip_addr]
 ```
  cewl http://[ip_addr]:[port_num]/index.html -m 6 -w cewl.lst
 ```
+
+### w3m
+w3m can be utilized to quickly grab the robots.txt from a website
+
+```
+w3m -dump [ip_addr]/robots.txt
+```
+
+### DirBuster
+
