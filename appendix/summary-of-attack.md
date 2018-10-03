@@ -5,3 +5,25 @@
 
 **Xmas Attack** - Christmas tree packet is a packet with every option set \(has the flags **FIN, URG, PSH**\). A large number of Christmas tree packets can be used for DoS attack. \(Xmas packets require much more processing by routers and end-hosts.\) **Land Attack** - send a packet with to a vulnerable system with the target's IP address as source and destination IP address. **Wardriving** - act of searching for Wi-Fi wireless networks by a person, using a laptop or smartphone. Similar terms includes **warbiking**, **warcycling**, **warwalking**.
 
+### Hack the Box Machines
+Lame
+Beep
+Bastard
+Grandpa/Granny
+Mirai
+Solidstate
+Jeeves
+Tally (Much harder than anything on OSCP, but you've gotta get used to windows)
+Bashed
+Nibbles
+Sense
+Valentine
+Bart (Again, same issue but really get used to windows)
+Chatterbox
+Popcorn
+Haircut
+Nineveh
+Shocker
+Cronos
+Arctic
+Optimum
