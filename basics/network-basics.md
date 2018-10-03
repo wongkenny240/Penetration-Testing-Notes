@@ -28,13 +28,13 @@ This involves a SYN sent to an TCP open port that has a service bound to it, typ
 * Server returns SYN/ACK
 * Client sends ACK
 
-![](../assets/2018-03-07%2017_49_56-Start.png)
+![](../.gitbook/assets/2018-03-07-17_49_56-start.png)
 
 ## Filtered ports or when the firewall drops a packet
 
-![](../assets/2018-03-07%2017_50_28-Start.png)
+![](../.gitbook/assets/2018-03-07-17_50_28-start.png)
 
-![](../assets/2018-03-07%2017_50_17-Start.png)
+![](../.gitbook/assets/2018-03-07-17_50_17-start.png)
 
 * no service running on the target port
 * firewall block access

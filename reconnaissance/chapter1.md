@@ -80,7 +80,7 @@ run help menu of specific script: `--script-help <nameOfScript>`
 
 TCP SYN Scan
 
-```
+```text
  -sS
 ```
 
@@ -92,7 +92,7 @@ TCP SYN Scan
 
 TCP connect scan
 
-```
+```text
  -sT
 ```
 
@@ -102,7 +102,7 @@ TCP connect scan
 
 UDP scan
 
-```
+```text
  -sU
 ```
 
@@ -114,7 +114,7 @@ UDP scan
 
 XMAS scan
 
-```
+```text
  -sX
 ```
 
@@ -126,7 +126,7 @@ XMAS scan
 
 FIN scan
 
-```
+```text
  -sF
 ```
 
@@ -135,7 +135,7 @@ FIN scan
 
 NULL scan
 
-```
+```text
  -sN
 ```
 
@@ -148,7 +148,7 @@ IDLE scan
 
 IP protocol scan
 
-```
+```text
  -sO
 ```
 
