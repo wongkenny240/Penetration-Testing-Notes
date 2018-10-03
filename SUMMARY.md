@@ -18,6 +18,7 @@
 
 * [Information Gathering](reconnaissance/chapter1.md)
 * [Vulnerability Scanning](reconnaissance/vulnerability-scanning.md)
+* [Service Enumeration](reconnaissance/service-enumeration.md)
 
 ## Exploit
 
