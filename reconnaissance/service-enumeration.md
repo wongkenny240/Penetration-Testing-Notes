@@ -52,3 +52,9 @@ curl -i [ip_addr]
 ```
 bash ./scripts/x11screenshot.sh [ip_addr]
 ```
+
+### CeWL
+
+```
+ cewl http://[ip_addr]:[port_num]/index.html -m 6 -w cewl.lst
+```
