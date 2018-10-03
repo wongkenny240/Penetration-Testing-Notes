@@ -78,3 +78,21 @@ w3m -dump [ip_addr]/robots.txt
 
 ![Result](../.gitbook/assets/image%20%283%29.png)
 
+### wafw00f 
+
+ Wafw00f identifies if a particular web address is behind a web application firewall.
+ 
+ #### http
+
+```
+wafw00f http://[IP]:[PORT], "http,https,ssl,soap,http-proxy,http-alt"
+```
+
+
+ #### https
+ 
+```
+wafw00f https://[IP]:[PORT], "http,https,ssl,soap,http-proxy,http-alt"
+
+```
+
