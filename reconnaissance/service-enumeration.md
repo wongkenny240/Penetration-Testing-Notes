@@ -148,6 +148,10 @@ enum4linux -R 600-660 [ip_addr]
 Perform a dictionary attack, if the server doesn't let you retrieve a share list
 ```
 enum4linux -s shares.txt [ip_addr]
-
 ```
 
+Pulls OS information using smbclient, this can pull the service pack version on some versions of Windows
+
+```
+enum4linux -o [ip_addr]
+```
