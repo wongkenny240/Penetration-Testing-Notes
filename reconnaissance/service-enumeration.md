@@ -119,7 +119,6 @@ Do Everything, runs all options apart from dictionary based share name guessing
 
 ```
 enum4linux -a [ip_addr]
-
 ```
 
 
@@ -139,7 +138,6 @@ Pulls usernames from the default RID range (500-550,1000-1050)
 
 ```
 enum4linux -r [ip_addr]
-
 ```
 
 Pull usernames using a custom RID range
@@ -147,6 +145,9 @@ Pull usernames using a custom RID range
 enum4linux -R 600-660 [ip_addr]
 ```
 
+Perform a dictionary attack, if the server doesn't let you retrieve a share list
+```
+enum4linux -s shares.txt [ip_addr]
 
-
+```
 
