@@ -112,8 +112,10 @@ wafw00f https://[IP]:[PORT], "http,https,ssl,soap,http-proxy,http-alt"
 
 ### enum4linux
 
-Do Everything, runs all options apart from dictionary based share name guessing
+enum4linux is an alternative to enum.exe on Windows, enum4linux is used to enumerate Windows and Samba hosts.
 
+
+Do Everything, runs all options apart from dictionary based share name guessing
 
 ```
 enum4linux -a [ip_addr]
@@ -126,4 +128,25 @@ Lists usernames, if the server allows it - (RestrictAnonymous = 0)
 ```
 enum4linux -U [ip_addr]
 ```
+
+Pull a full list of users if you can obtain credentials
+
+```
+enum4linux -u administrator -p password -U [ip_addr]
+```
+
+Pulls usernames from the default RID range (500-550,1000-1050)
+
+```
+enum4linux -r [ip_addr]
+
+```
+
+Pull usernames using a custom RID range
+```
+enum4linux -R 600-660 [ip_addr]
+```
+
+
+
 
