@@ -112,4 +112,18 @@ wafw00f https://[IP]:[PORT], "http,https,ssl,soap,http-proxy,http-alt"
 
 ### enum4linux
 
+Do Everything, runs all options apart from dictionary based share name guessing
+
+
+```
+enum4linux -a [ip_addr]
+
+```
+
+
+Lists usernames, if the server allows it - (RestrictAnonymous = 0)
+
+```
+enum4linux -U [ip_addr]
+```
 
