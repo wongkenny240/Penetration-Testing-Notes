@@ -267,3 +267,35 @@ Connect the share
 ```
 smbclient \\\\[ip addr]\\[share name]
 ```
+
+### RPCClient
+
+Rpcclient can be utilized to check for ***null sessions***.
+
+```
+bash -c "echo 'srvinfo' | rpcclient [ip_addr] -U%"
+```
+
+#### smb-enum-users-rpc
+
+Users can be enumerated through SMB services via RPCClient.
+
+```
+bash -c "echo 'enumdomusers' | rpcclient [IP] -U%"
+
+```
+
+## 161: SNMP
+
+### snmpwalk
+
+```
+snmpwalk -c public -v1 [ip_addr]
+```
+
+### snmpcheck
+
+```
+snmpcheck -t [ip_addr]
+```
+
