@@ -114,6 +114,15 @@ wafw00f https://[IP]:[PORT], "http,https,ssl,soap,http-proxy,http-alt"
 * Check the /robots.txt file for hidden folders
 * Look for comments in the HTML source code. Programmers sometimes stick usernames, passwords, and other hints in there that may give you a way into the box
 
+## 135: RPC
+
+rpcinfo can be utilized to enumerate RPC services.
+
+```
+rpcinfo -p [IP]
+```
+
+
 ## 137/139/445: NetBIOS/SMB
 
 ### enum4linux
