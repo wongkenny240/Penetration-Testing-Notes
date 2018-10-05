@@ -226,10 +226,13 @@ nmap -sV -Pn -vv -p [PORT] --script=smb-vuln* --script-args=unsafe=1 [IP]
 
 #### Manual Enumeration
 
+List shares with smbclient
+
 ```
 smbclient -L 1.2.3.4
 ```
 
+Output
 ```
 Server time is Sat Aug 10 15:58:27 1996
 Timezone is UTC+10.0
@@ -257,4 +260,10 @@ This machine has a browse list:
         LOVELACE             Samba 1.9.15p8
         RITCHIE              Samba 1.9.15p8
         ZIMMERMAN            
+```
+
+Connect the share
+
+```
+smbclient \\\\[ip addr]\\[share name]
 ```
