@@ -155,3 +155,45 @@ Pulls OS information using smbclient, this can pull the service pack version on 
 ```
 enum4linux -o [ip_addr]
 ```
+
+### Impacket's samrdump.py
+
+An application that communicates with the Security Account Manager Remote interface from the MSRPC suite. It lists system user accounts, available resource shares and other sensitive information exported through this service.
+
+```
+ ./samrdump.py [[domain/] username [:password] @] [Target IP Address]
+```
+
+```
+./samrdump.py [ip_addr] [port]/SMB
+```
+
+### smbenum
+
+```
+bash ./scripts/smbenum.sh [ip_addr]
+```
+
+### Nmap NSE Script
+
+#### smb-enum-groups
+
+Nmap can be utilized to enumerate groups via SMB.
+
+```
+nmap -p [port] --script=smb-enum-groups [IP] -vvvvv
+```
+
+#### smb-enum-shares
+
+Nmap can be utilized to enumerate shares via SMB.
+
+```
+nmap -p [port] --script=smb-enum-shares [IP] -vvvvv
+```
+
+
+
+
+
+
