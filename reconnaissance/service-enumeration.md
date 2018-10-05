@@ -118,10 +118,9 @@ wafw00f https://[IP]:[PORT], "http,https,ssl,soap,http-proxy,http-alt"
 
 rpcinfo can be utilized to enumerate RPC services.
 
-```
+```text
 rpcinfo -p [IP]
 ```
-
 
 ## 137/139/445: NetBIOS/SMB
 
@@ -237,12 +236,13 @@ nmap -sV -Pn -vv -p [PORT] --script=smb-vuln* --script-args=unsafe=1 [IP]
 
 List shares with smbclient
 
-```
+```text
 smbclient -L 1.2.3.4
 ```
 
 Output
-```
+
+```text
 Server time is Sat Aug 10 15:58:27 1996
 Timezone is UTC+10.0
 Password: 
@@ -268,20 +268,20 @@ This machine has a browse list:
         KERNIGAN             Samba 1.9.15p8
         LOVELACE             Samba 1.9.15p8
         RITCHIE              Samba 1.9.15p8
-        ZIMMERMAN            
+        ZIMMERMAN
 ```
 
 Connect the share
 
-```
+```text
 smbclient \\\\[ip addr]\\[share name]
 ```
 
 ### RPCClient
 
-Rpcclient can be utilized to check for ***null sessions***.
+Rpcclient can be utilized to check for _**null sessions**_.
 
-```
+```text
 bash -c "echo 'srvinfo' | rpcclient [ip_addr] -U%"
 ```
 
@@ -289,22 +289,21 @@ bash -c "echo 'srvinfo' | rpcclient [ip_addr] -U%"
 
 Users can be enumerated through SMB services via RPCClient.
 
-```
+```text
 bash -c "echo 'enumdomusers' | rpcclient [IP] -U%"
-
 ```
 
 ## 161: SNMP
 
 ### snmpwalk
 
-```
+```text
 snmpwalk -c public -v1 [ip_addr]
 ```
 
 ### snmpcheck
 
-```
+```text
 snmpcheck -t [ip_addr]
 ```
 
@@ -312,16 +311,15 @@ snmpcheck -t [ip_addr]
 
 ### rdp-sec-check
 
-```
+```text
 perl ./scripts/rdp-sec-check.pl [ip_addr]:[port]
 ```
 
 ### ncrack
+
 Ncrack can be utilized to brute force RDP services
 
-```
+```text
 ncrack -vv --user administrator -P /usr/share/wordlists/rockyou.txt rdp://[ip addr]
 ```
-
-
 

@@ -26,6 +26,7 @@
 * [Metasploit](exploit/metasploit.md)
 * [MSFvenom](exploit/msfvenom.md)
 * [Evading Anti-Virus](exploit/evading-anti-virus.md)
+* [Reverse Shell](exploit/reverse-shell.md)
 
 ## Post Exploit
 
