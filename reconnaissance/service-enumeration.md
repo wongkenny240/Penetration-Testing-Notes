@@ -308,9 +308,9 @@ snmpwalk -c public -v1 [ip_addr]
 snmpcheck -t [ip_addr]
 ```
 
-### 3389: RDP
+## 3389: RDP
 
-#### rdp-sec-check
+### rdp-sec-check
 
 ```
 perl ./scripts/rdp-sec-check.pl [ip_addr]:[port]
