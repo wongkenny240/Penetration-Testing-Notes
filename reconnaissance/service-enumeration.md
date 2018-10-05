@@ -315,3 +315,13 @@ snmpcheck -t [ip_addr]
 ```
 perl ./scripts/rdp-sec-check.pl [ip_addr]:[port]
 ```
+
+### ncrack
+Ncrack can be utilized to brute force RDP services
+
+```
+ncrack -vv --user administrator -P /usr/share/wordlists/rockyou.txt rdp://[ip addr]
+```
+
+
+
