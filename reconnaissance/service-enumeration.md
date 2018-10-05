@@ -78,38 +78,32 @@ w3m -dump [ip_addr]/robots.txt
 
 ![Result](../.gitbook/assets/image%20%283%29.png)
 
-### wafw00f
+### wafw00f 
 
-Wafw00f identifies if a particular web address is behind a web application firewall.
+ Wafw00f identifies if a particular web address is behind a web application firewall.
+ 
+ #### http
 
-#### http
-
-```text
+```
 wafw00f http://[IP]:[PORT], "http,https,ssl,soap,http-proxy,http-alt"
 ```
 
-#### https
 
-```text
+ #### https
+ 
+```
 wafw00f https://[IP]:[PORT], "http,https,ssl,soap,http-proxy,http-alt"
+
 ```
 
 ### Tips
-
 * PHP pages: Check for the presence of common php default pages and folders such as:
-
-  /phpliteadmin
-
-  /dashboard
-
-  /admin
-
-  /admin.php
-
-  /login
-
-  /login.php
-
+/phpliteadmin
+/dashboard
+/admin
+/admin.php
+/login
+/login.php
 * If PHP is found, check the phpinfo.php file. On occasion hidden credentials will be located at the very bottom of the page
 * Check the /robots.txt file for hidden folders
 * Look for comments in the HTML source code. Programmers sometimes stick usernames, passwords, and other hints in there that may give you a way into the box
@@ -120,45 +114,45 @@ wafw00f https://[IP]:[PORT], "http,https,ssl,soap,http-proxy,http-alt"
 
 enum4linux is an alternative to enum.exe on Windows, enum4linux is used to enumerate Windows and Samba hosts.
 
+
 Do Everything, runs all options apart from dictionary based share name guessing
 
-```text
+```
 enum4linux -a [ip_addr]
 ```
 
-Lists usernames, if the server allows it - \(RestrictAnonymous = 0\)
 
-```text
+Lists usernames, if the server allows it - (RestrictAnonymous = 0)
+
+```
 enum4linux -U [ip_addr]
 ```
 
 Pull a full list of users if you can obtain credentials
 
-```text
+```
 enum4linux -u administrator -p password -U [ip_addr]
 ```
 
-Pulls usernames from the default RID range \(500-550,1000-1050\)
+Pulls usernames from the default RID range (500-550,1000-1050)
 
-```text
+```
 enum4linux -r [ip_addr]
 ```
 
 Pull usernames using a custom RID range
-
-```text
+```
 enum4linux -R 600-660 [ip_addr]
 ```
 
 Perform a dictionary attack, if the server doesn't let you retrieve a share list
-
-```text
+```
 enum4linux -s shares.txt [ip_addr]
 ```
 
 Pulls OS information using smbclient, this can pull the service pack version on some versions of Windows
 
-```text
+```
 enum4linux -o [ip_addr]
 ```
 
@@ -166,19 +160,17 @@ enum4linux -o [ip_addr]
 
 An application that communicates with the Security Account Manager Remote interface from the MSRPC suite. It lists system user accounts, available resource shares and other sensitive information exported through this service.
 
-```text
+```
  ./samrdump.py [[domain/] username [:password] @] [Target IP Address]
 ```
 
-![](../.gitbook/assets/image%20%286%29.png)
-
-```text
+```
 ./samrdump.py [ip_addr] [port]/SMB
 ```
 
 ### smbenum
 
-```text
+```
 bash ./scripts/smbenum.sh [ip_addr]
 ```
 
@@ -188,7 +180,7 @@ bash ./scripts/smbenum.sh [ip_addr]
 
 Nmap can be utilized to enumerate groups via SMB.
 
-```text
+```
 nmap -p [port] --script=smb-enum-groups [IP] -vvvvv
 ```
 
@@ -196,7 +188,33 @@ nmap -p [port] --script=smb-enum-groups [IP] -vvvvv
 
 Nmap can be utilized to enumerate shares via SMB.
 
-```text
+```
 nmap -p [port] --script=smb-enum-shares [IP] -vvvvv
 ```
+
+#### smb-enum-sessions
+
+Nmap can be utilized to enumerate logged in users via SMB.
+
+```
+nmap -p [port] --script=smb-enum-sessions [IP] -vvvvv
+```
+
+#### smb-enum-policies
+Nmap can be utilized to password policies via SMB.
+
+```
+nmap -p [port] --script=smb-enum-domains [IP] -vvvvv
+```
+
+#### smb-vulnerability
+
+Nmap can be utilized to check SMB services for known vulnerabilities.
+
+```
+nmap -sV -Pn -vv -p [PORT] --script=smb-vuln* --script-args=unsafe=1 [IP]
+```
+
+
+
 
