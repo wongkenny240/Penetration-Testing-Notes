@@ -34,6 +34,15 @@ Manual password bruteforcing
 hydra -l username -P password_list.txt 192.168.168.168 -f -v ssh
 ```
 
+## 25/465/587: SMTP
+
+### iSMTP
+Test a list of IPs from a file (-f smtp-ips.txt) enumerating usernames from a dictionary file (-e /usr/share/wordlists/metasploit/unix_users.txt):
+
+```
+ismtp -f smtp-ips.txt -e /usr/share/wordlists/metasploit/unix_users.txt
+```
+
 ## 80/443/8080: HTTP/HTTPS
 
 ### Netcat
@@ -314,6 +323,13 @@ snmpcheck -t [ip_addr]
 ```text
 perl ./scripts/rdp-sec-check.pl [ip_addr]:[port]
 ```
+
+### nmap NSE script
+
+```
+nmap -p 3389 --script rdp-enum-encryption <ip>
+```
+
 
 ### ncrack
 
