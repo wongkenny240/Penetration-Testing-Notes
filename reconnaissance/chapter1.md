@@ -18,7 +18,7 @@ _**Active fingerprinting**_ is the process of transmitting packets to a remote h
 
 _**Passive fingerprinting**_ is the process of analysing packets from a host on a network. In this case, fingerprinter acts as a sniffer and doesn't put any traffic on a network
 
-### Passive Information Gathering
+## Passive Information Gathering
 
 Domain Name Registration: `whois [example.com]`
 
@@ -26,7 +26,7 @@ Find IP Address: `host [www.example.com]`
 
 Zone transfer: `host -l [www.example.com] [DNS server]`
 
-### Active Information Gathering
+## Active Information Gathering
 
 ## masscan
 
