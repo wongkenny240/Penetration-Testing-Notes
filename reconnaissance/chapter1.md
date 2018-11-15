@@ -28,6 +28,15 @@ Zone transfer: `host -l [www.example.com] [DNS server]`
 
 ## Active Information Gathering
 
+
+## netdiscover
+
+Network discovery - discover internal IP addresses
+
+```
+netdiscover -i etho
+```
+
 ## masscan
 
 Scan for a selection of ports (-p22,80,445) across a given subnet (192.168.1.0/24):
