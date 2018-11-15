@@ -28,6 +28,42 @@ Zone transfer: `host -l [www.example.com] [DNS server]`
 
 ### Active Information Gathering
 
+## masscan
+
+Scan for a selection of ports (-p22,80,445) across a given subnet (192.168.1.0/24):
+
+```
+masscan -p22,80,445 192.168.1.0/24
+```
+
+scan a range of ports using the dash
+
+```
+masscan 10.11.0.0/16 -p22-25
+```
+
+scan a class B subnet for the top 100 ports
+
+```
+masscan 10.11.0.0/16 ‐‐top-ports 100
+```
+By default, masscan scans at a rate of 100 packets per second, which is quite slow. To increase that, simply supply the -rate option and specify a value.
+
+```
+masscan 10.11.0.0/16 ‐‐top-ports 100 -rate 100000
+```
+
+First, you can just use the standard Unix redirector to send output to a file:
+
+```
+masscan 10.11.0.0/16 ‐‐top-ports 100 > results.txt
+```
+
+- oX filename: Output to filename in XML.
+- oG filename: Output to filename in Grepable format.
+- oJ filename: Output to filename in JSON format.
+
+
 ## Nmap
 
 First Stage of Enumeration
