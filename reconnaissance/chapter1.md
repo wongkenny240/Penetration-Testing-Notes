@@ -37,6 +37,12 @@ Network discovery - discover internal IP addresses
 netdiscover -i eth0
 ```
 
+`-r` scan a given range instead of an auto scan
+
+```
+netdiscover -i eth0 -r 192.168.1.1/24
+```
+
 ## masscan
 
 Scan for a selection of ports (-p22,80,445) across a given subnet (192.168.1.0/24):
