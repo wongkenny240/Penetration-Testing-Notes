@@ -34,7 +34,7 @@ Zone transfer: `host -l [www.example.com] [DNS server]`
 Network discovery - discover internal IP addresses
 
 ```
-netdiscover -i etho
+netdiscover -i eth0
 ```
 
 ## masscan
