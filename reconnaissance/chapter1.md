@@ -154,6 +154,14 @@ IP protocol scan
 
 * determine which IP protocols \(TCP, ICMP, IGMP\) are supported by target machines
 
+
+### Logging
+`tee filename` reads from stdin and writes to stdout and a file, so all the output of your command shows up in your terminal as normal, but it's also logged to a file.
+
+```
+nmap -sS -A --top-ports 1000 target.ip | tee nmap.txt 
+```
+
 ### Other scanning tools
 
 _**Superscan \(Active\)**_ is connect-based port scanning software designed to detect open TCP and UDP ports on a target computer, determine which services are running on those ports, and run queries such as whois, ping, ICMP traceroute, and Hostname lookups.
