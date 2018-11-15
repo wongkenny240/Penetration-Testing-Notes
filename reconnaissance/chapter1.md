@@ -59,9 +59,9 @@ First, you can just use the standard Unix redirector to send output to a file:
 masscan 10.11.0.0/16 ‐‐top-ports 100 > results.txt
 ```
 
-- oX filename: Output to filename in XML.
-- oG filename: Output to filename in Grepable format.
-- oJ filename: Output to filename in JSON format.
+- -oX filename: Output to filename in XML.
+- -oG filename: Output to filename in Grepable format.
+- -oJ filename: Output to filename in JSON format.
 
 
 ## Nmap
