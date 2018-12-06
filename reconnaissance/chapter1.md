@@ -208,7 +208,9 @@ IP protocol scan
 
 * determine which IP protocols \(TCP, ICMP, IGMP\) are supported by target machines
 
-We will miss some port if we use the default scan
+### Detailed Scan
+
+We will miss some port if we use the default scan `-sC`
 
 ```
 nmap -p- [ip_address]
@@ -220,7 +222,6 @@ or
 nmap -p0-65535 [ip_address] =T5
 ```
 
-### Detailed Scan
 
 
 ### Logging
