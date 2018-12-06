@@ -43,3 +43,16 @@ Check number of columns by order by
 ' ORDER BY 3;#
 ```
 
+Check the field appear
+
+```text
+' & 0 union select 1,2,3;#
+```
+
+IF the developer only allow one row
+
+```text
+' &  1 union select 1,2,3;#
+```
+
+
