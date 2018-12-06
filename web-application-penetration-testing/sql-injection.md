@@ -52,7 +52,7 @@ Check the field appear
 IF the developer only allow one row
 
 ```text
-' &  1 union select 1,2,3;#
+' & 1 union select 1,2,3;#
 ```
 
 
