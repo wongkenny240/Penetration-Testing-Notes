@@ -219,7 +219,7 @@ nmap -p- [ip_address]
 or 
 
 ```
-nmap -p0-65535 [ip_address] =T5
+nmap -p0-65535 [ip_address] -T5
 ```
 
 
