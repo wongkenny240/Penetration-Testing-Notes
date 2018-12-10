@@ -45,6 +45,33 @@ ismtp -f smtp-ips.txt -e /usr/share/wordlists/metasploit/unix_users.txt
 
 ## 80/443/8080: HTTP/HTTPS
 
+### Nikto
+
+Scanning Webservers for vulnerabilities
+
+Against a host
+
+```text
+nikto -host  [hostname or IP]
+```
+
+Against multiple host
+
+```text
+nmap -p80 192.168.0.0/24 -oG – | nikto -h –
+```
+
+### GoBuster
+
+```text
+gobuster -u [URL] -w [wordlists]
+```
+
+Useful wordlists
+```text
+
+```
+
 ### Netcat
 
 Banner Grabbing
@@ -86,6 +113,7 @@ w3m -dump [ip_addr]/robots.txt
 ![Choose a wordlist](../.gitbook/assets/image%20%282%29.png)
 
 ![Result](../.gitbook/assets/image%20%283%29.png)
+
 
 ### wafw00f
 
