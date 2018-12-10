@@ -330,6 +330,13 @@ Users can be enumerated through SMB services via RPCClient.
 bash -c "echo 'enumdomusers' | rpcclient [IP] -U%"
 ```
 
+
+#### rpcinfo
+
+```text
+rpcinfo -p [ip_address]
+```
+
 ## 161: SNMP
 
 ### snmpwalk
