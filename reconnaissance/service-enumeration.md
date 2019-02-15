@@ -227,6 +227,12 @@ An application that communicates with the Security Account Manager Remote interf
 bash ./scripts/smbenum.sh [ip_addr]
 ```
 
+### smbmap
+
+```text
+smbmap -u victim -p s3cr3t -H 192.168.86.61
+```
+
 ### Nmap NSE Script
 
 #### smb-enum-groups
