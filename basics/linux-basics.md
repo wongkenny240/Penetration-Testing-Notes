@@ -22,7 +22,9 @@ Changing password: `passwd [login_name]`
 
 Changing to root:
 
-> `sudo su -` `[type your password]`
+```
+sudo su - username
+```
 
 Check your current account: `whoami`
 
