@@ -46,7 +46,14 @@ Create a wordlist that will contains the word pentestlab followed by 3 random ch
 CeWL is a ruby app which spiders a given url to a specified depth, optionally following external links, and returns a wordlist which can then be used for password crackers such as John the Ripper.
 
 ```text
-cewl -d 2 -m 5 -w docswords.txt http://docs.kali.org
+cewl -d 2 -m 5 -w docswords.txt https://example.com
+```
+
+Options
+```
+-m, --min_word_length: Minimum word length, default 3.
+-w, --write: Write the output to the file.
+-d <x>,--depth <x>: Depth to spider to, default 2.
 ```
 
 ## Bruteforce
