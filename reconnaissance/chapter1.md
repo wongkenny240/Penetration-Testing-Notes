@@ -81,6 +81,13 @@ masscan 10.11.0.0/16 ‐‐top-ports 100 > results.txt
 
 ## Nmap
 
+Frequently used command:
+
+```
+nmap -sC -sV -oA [output filename] [ip_address]
+```
+
+
 First Stage of Enumeration
 
 `nmap -sP 10.0.0.0/24`
