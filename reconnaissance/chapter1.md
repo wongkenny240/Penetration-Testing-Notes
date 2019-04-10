@@ -90,9 +90,13 @@ nmap -sC -sV -oA [output filename] [ip_address]
 
 First Stage of Enumeration
 
-`nmap -sP 10.0.0.0/24`
+```
+nmap -sP 10.0.0.0/24
+```
 
-`nmap -p 1-65535 -sV -sS -T4[target]`
+```
+nmap -p 1-65535 -sV -sS -T4[target]
+```
 
 ### Basic Command
 
