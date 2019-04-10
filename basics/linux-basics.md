@@ -22,7 +22,7 @@ Changing password: `passwd [login_name]`
 
 Changing to root:
 
-```
+```text
 sudo su - username
 ```
 

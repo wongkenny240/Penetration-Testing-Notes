@@ -28,73 +28,71 @@ Zone transfer: `host -l [www.example.com] [DNS server]`
 
 ## Active Information Gathering
 
-
 ## netdiscover
 
 Network discovery - discover internal IP addresses
 
-```
+```text
 netdiscover -i eth0
 ```
 
 `-r` scan a given range instead of an auto scan
 
-```
+```text
 netdiscover -i eth0 -r 192.168.1.1/24
 ```
 
 ## masscan
 
-Scan for a selection of ports (-p22,80,445) across a given subnet (192.168.1.0/24):
+Scan for a selection of ports \(-p22,80,445\) across a given subnet \(192.168.1.0/24\):
 
-```
+```text
 masscan -p22,80,445 192.168.1.0/24
 ```
 
 scan a range of ports using the dash
 
-```
+```text
 masscan 10.11.0.0/16 -p22-25
 ```
 
 scan a class B subnet for the top 100 ports
 
-```
+```text
 masscan 10.11.0.0/16 ‐‐top-ports 100
 ```
+
 By default, masscan scans at a rate of 100 packets per second, which is quite slow. To increase that, simply supply the -rate option and specify a value.
 
-```
+```text
 masscan 10.11.0.0/16 ‐‐top-ports 100 -rate 100000
 ```
 
 First, you can just use the standard Unix redirector to send output to a file:
 
-```
+```text
 masscan 10.11.0.0/16 ‐‐top-ports 100 > results.txt
 ```
 
-- -oX filename: Output to filename in XML.
-- -oG filename: Output to filename in Grepable format.
-- -oJ filename: Output to filename in JSON format.
-
+* -oX filename: Output to filename in XML.
+* -oG filename: Output to filename in Grepable format.
+* -oJ filename: Output to filename in JSON format.
 
 ## Nmap
 
 Frequently used command:
 
-```
+```text
 nmap -sC -sV -oA [output filename] [ip_address]
 ```
 
-
 First Stage of Enumeration
 
-```
+```text
 nmap -sP 10.0.0.0/24
 ```
 
-```
+```text
 nmap -p 1-65535 -sV -sS -T4[target]
 ```
 
@@ -139,7 +137,6 @@ run specific script: `--script <filename>|<catergory>|<directories>`
 run help menu of specific script: `--script-help <nameOfScript>`
 
 can run with this syntax: `--script="*vuln* and safe"`
-
 
 ### Different Scan Technique
 
@@ -223,23 +220,22 @@ IP protocol scan
 
 We will miss some port if we use the default scan `-sC`
 
-```
+```text
 nmap -p- [ip_address]
 ```
 
-or 
+or
 
-```
+```text
 nmap -p0-65535 [ip_address] -T5
 ```
 
-
-
 ### Logging
+
 `tee filename` reads from stdin and writes to stdout and a file, so all the output of your command shows up in your terminal as normal, but it's also logged to a file.
 
-```
-nmap -sS -A --top-ports 1000 target.ip | tee nmap.txt 
+```text
+nmap -sS -A --top-ports 1000 target.ip | tee nmap.txt
 ```
 
 ### Other scanning tools

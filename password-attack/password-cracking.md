@@ -50,7 +50,8 @@ cewl -d 2 -m 5 -w docswords.txt https://example.com
 ```
 
 Options
-```
+
+```text
 -m, --min_word_length: Minimum word length, default 3.
 -w, --write: Write the output to the file.
 -d <x>,--depth <x>: Depth to spider to, default 2.
@@ -106,7 +107,7 @@ hydra –L /root/Desktop/user.txt -P /root/Desktop/pass.txt 192.168.1.118 smb
 
 ![Username List, Password List](../.gitbook/assets/image%20%281%29.png)
 
-{% embed data="{\"url\":\"http://www.hackingarticles.in/5-ways-to-hack-smb-login-password/\",\"type\":\"link\",\"title\":\"5 Ways to Hack SMB Login Password\",\"description\":\"In this article, we will learn how to gain control over our victim’s PC through SMB Port. There are various ways to do it and let take time and learn all those because different circumstances call for different measure. xHydra This is the graphical version to apply dictionary attack via SMB port to hack a... Continue reading →\",\"thumbnail\":{\"type\":\"thumbnail\",\"url\":\"https://4.bp.blogspot.com/-1l4jtN0-RVs/Wp7QKE\_WPPI/AAAAAAAAVB8/ID1QQcSz4IUkOIVPvQqWMKMBnjk6A7uVwCEwYBhgL/s1600/3.png\",\"width\":482,\"height\":546,\"aspectRatio\":1.1327800829875518}}" %}
+{% embed url="http://www.hackingarticles.in/5-ways-to-hack-smb-login-password/" caption="" %}
 
 ### Ncrack
 

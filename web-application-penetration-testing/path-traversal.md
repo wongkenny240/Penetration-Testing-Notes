@@ -56,5 +56,5 @@ Unicode/UTF-8 Encoding
 
 Different OS/APIs have different behavior in the parsing of file paths
 
-Source: [https://www.owasp.org/index.php/Testing\_Directory\_traversal/file\_include\_\(OTG-AUTHZ-001](https://www.owasp.org/index.php/Testing_Directory_traversal/file_include_%28OTG-AUTHZ-001)
+Source: [https://www.owasp.org/index.php/Testing\_Directory\_traversal/file\_include\_\(OTG-AUTHZ-001\)](https://www.owasp.org/index.php/Testing_Directory_traversal/file_include_%28OTG-AUTHZ-001%29)
 

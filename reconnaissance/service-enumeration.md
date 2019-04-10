@@ -37,9 +37,10 @@ hydra -l username -P password_list.txt 192.168.168.168 -f -v ssh
 ## 25/465/587: SMTP
 
 ### iSMTP
-Test a list of IPs from a file (-f smtp-ips.txt) enumerating usernames from a dictionary file (-e /usr/share/wordlists/metasploit/unix_users.txt):
 
-```
+Test a list of IPs from a file \(-f smtp-ips.txt\) enumerating usernames from a dictionary file \(-e /usr/share/wordlists/metasploit/unix\_users.txt\):
+
+```text
 ismtp -f smtp-ips.txt -e /usr/share/wordlists/metasploit/unix_users.txt
 ```
 
@@ -68,6 +69,7 @@ gobuster -u [URL] -w [wordlists]
 ```
 
 Useful wordlists
+
 ```text
 
 ```
@@ -113,7 +115,6 @@ w3m -dump [ip_addr]/robots.txt
 ![Choose a wordlist](../.gitbook/assets/image%20%282%29.png)
 
 ![Result](../.gitbook/assets/image%20%283%29.png)
-
 
 ### wafw00f
 
@@ -336,7 +337,6 @@ Users can be enumerated through SMB services via RPCClient.
 bash -c "echo 'enumdomusers' | rpcclient [IP] -U%"
 ```
 
-
 #### rpcinfo
 
 ```text
@@ -367,10 +367,9 @@ perl ./scripts/rdp-sec-check.pl [ip_addr]:[port]
 
 ### nmap NSE script
 
-```
+```text
 nmap -p 3389 --script rdp-enum-encryption <ip>
 ```
-
 
 ### ncrack
 
