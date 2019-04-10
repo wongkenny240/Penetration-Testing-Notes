@@ -60,6 +60,7 @@
 * [Path Traversal](web-application-penetration-testing/path-traversal.md)
 * [Heartbleed](web-application-penetration-testing/heartbleed.md)
 * [Shellshock](web-application-penetration-testing/shellshock.md)
+* [Burp Suite](web-application-penetration-testing/burp.md)
 
 ## Appendix
 
