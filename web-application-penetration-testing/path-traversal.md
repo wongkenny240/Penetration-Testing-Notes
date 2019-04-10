@@ -58,3 +58,19 @@ Different OS/APIs have different behavior in the parsing of file paths
 
 Source: [https://www.owasp.org/index.php/Testing\_Directory\_traversal/file\_include\_\(OTG-AUTHZ-001\)](https://www.owasp.org/index.php/Testing_Directory_traversal/file_include_%28OTG-AUTHZ-001%29)
 
+## Bypass input validation
+
+Below code will replace ../ from the request
+
+```PHP
+filename = Request.QueryString(“file”); 
+Replace(filename, “/”,”\”); 
+Replace(filename, “..\”,””);
+```
+
+Below strings can be used to test for the flaws
+```text
+file=....//....//boot.ini 
+file=....\\....\\boot.ini 
+file= ..\..\boot.ini 
+```
