@@ -13,3 +13,15 @@
 ## Burp Intruder
 
 ### Fuzzing type and Payload type
+
+### Intruder Result
+
+## Burp Repeater
+
+## Burp Sequencer
+
+## Burp Decoder
+
+## Burp Comparer
+
+## Burp Extender
