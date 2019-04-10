@@ -110,7 +110,7 @@ w3m -dump [ip_addr]/robots.txt
 
 ### DirBuster
 
-![Open DirBuster](../.gitbook/assets/image%20%284%29.png)
+![Open DirBuster](../.gitbook/assets/image%20%285%29.png)
 
 ![Choose a wordlist](../.gitbook/assets/image%20%282%29.png)
 
@@ -216,7 +216,7 @@ An application that communicates with the Security Account Manager Remote interf
  ./samrdump.py [[domain/] username [:password] @] [Target IP Address]
 ```
 
-![](../.gitbook/assets/image%20%287%29.png)
+![](../.gitbook/assets/image%20%289%29.png)
 
 ```text
 ./samrdump.py [ip_addr] [port]/SMB

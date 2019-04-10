@@ -24,4 +24,9 @@
 
 ## Burp Comparer
 
+![](../.gitbook/assets/image%20%284%29.png)
+
 ## Burp Extender
+
+![](../.gitbook/assets/image%20%287%29.png)
+

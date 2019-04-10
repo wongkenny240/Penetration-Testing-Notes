@@ -62,15 +62,17 @@ Source: [https://www.owasp.org/index.php/Testing\_Directory\_traversal/file\_inc
 
 Below code will replace ../ from the request
 
-```PHP
+```php
 filename = Request.QueryString(“file”); 
 Replace(filename, “/”,”\”); 
 Replace(filename, “..\”,””);
 ```
 
 Below strings can be used to test for the flaws
+
 ```text
 file=....//....//boot.ini 
 file=....\\....\\boot.ini 
-file= ..\..\boot.ini 
+file= ..\..\boot.ini
 ```
+
