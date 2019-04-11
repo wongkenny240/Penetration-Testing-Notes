@@ -160,7 +160,9 @@ unzip
 2. make program then compiles it
 3. make install command then installs the components
 
-> . /configure make make install
+```
+./configure make make install
+```
 
 _Note: Some tools don't have a "configure" script. For these, you just run the make command._
 
