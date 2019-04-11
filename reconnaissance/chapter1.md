@@ -138,6 +138,8 @@ run help menu of specific script: `--script-help <nameOfScript>`
 
 can run with this syntax: `--script="*vuln* and safe"`
 
+can skip some script: `--script="http-* and not http-brute"`
+
 ### Different Scan Technique
 
 TCP SYN Scan
