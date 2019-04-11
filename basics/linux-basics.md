@@ -102,41 +102,59 @@ Bring one of the jobs \(default is recent job\) into the foreground: `fg [job_nu
 
 Set your network interface options:
 
-> /etc/network/interfaces
+```
+/etc/network/interfaces
+```
 
 Make your changes happen \(as root\):
 
-> service networking restart
+```
+service networking restart
+```
 
 See your interface configuration:
 
-> ifconfig
+```
+ifconfig
+```
 
 lo is local loopback interface, eth0 is standard ethernet interface
 
 Send ICMP Echo Request:
 
-> ping \[IP Address\]
-
+```
+ping [IP Address]
+```
 Looking at network usage:
 
-> netstat -nap
+```
+netstat -nap
+```
 
 Better:
 
-> netstat -nap \| less
-
+```
+netstat -nap | less
+```
 _Note that various TCP and UDP po1ts are shown as LISTENING. These are waiting for a connection. Others may indicate that they are ESTABLISHED. These have existing connections._
 
 ## Building Tools
 
 untar a file
 
-> tar xvf \[archive.tar\]
-
+```
+tar xvf [archive.tar]
+```
 untar a file end with tar.gz or tgz
 
-> tar xvfz \[archive . tar.gz or archive . tgz\]
+```
+tar xvfz [archive.tar.gz or archive.tgz]
+```
+
+unzip
+```
+7z x [archive.7z]
+```
 
 1. A script is included with some tools to properly configure your system
 2. make program then compiles it
