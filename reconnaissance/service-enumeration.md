@@ -230,11 +230,29 @@ bash ./scripts/smbenum.sh [ip_addr]
 
 ### smbmap
 
+#### List Shares & Check null sessions
+
 ```text
-smbmap -u victim -p s3cr3t -H 192.168.86.61
+smbmap -H [ip]
 ```
 
+If you get credentials, can re-run to show more details
+
+```text
+smbmap -H [ip] -d [domain] -u [user] -p [password]
+```
+e.g `smbmap -u victim -p s3cr3t -H 192.168.86.61`
+
 ### Nmap NSE Script
+
+### List Shares
+#### smb-enum-shares
+
+Nmap can be utilized to enumerate shares via SMB.
+
+```text
+nmap -p [port] --script=smb-enum-shares [IP] -vvvvv
+```
 
 #### smb-enum-groups
 
@@ -242,14 +260,6 @@ Nmap can be utilized to enumerate groups via SMB.
 
 ```text
 nmap -p [port] --script=smb-enum-groups [IP] -vvvvv
-```
-
-#### smb-enum-shares
-
-Nmap can be utilized to enumerate shares via SMB.
-
-```text
-nmap -p [port] --script=smb-enum-shares [IP] -vvvvv
 ```
 
 #### smb-enum-sessions
@@ -268,6 +278,7 @@ Nmap can be utilized to password policies via SMB.
 nmap -p [port] --script=smb-enum-domains [IP] -vvvvv
 ```
 
+### Check for Vulnerability
 #### smb-vulnerability
 
 Nmap can be utilized to check SMB services for known vulnerabilities.
@@ -276,12 +287,12 @@ Nmap can be utilized to check SMB services for known vulnerabilities.
 nmap -sV -Pn -vv -p [PORT] --script=smb-vuln* --script-args=unsafe=1 [IP]
 ```
 
-#### Manual Enumeration
+### smbclient 
 
-List shares with smbclient
+#### List shares 
 
 ```text
-smbclient -L 1.2.3.4
+smbclient -L \\[ip]
 ```
 
 Output
@@ -315,18 +326,26 @@ This machine has a browse list:
         ZIMMERMAN
 ```
 
+#### Check null sessions
 Connect the share
 
 ```text
-smbclient \\\\[ip addr]\\[share name]
+smbclient \\\\[ip]\\[share name]
 ```
 
 ### RPCClient
 
-Rpcclient can be utilized to check for _**null sessions**_.
+#### Check null sessions
 
 ```text
 bash -c "echo 'srvinfo' | rpcclient [ip_addr] -U%"
+```
+
+or 
+
+```text
+rpcclient -U "" -N [ip]
+
 ```
 
 #### smb-enum-users-rpc
