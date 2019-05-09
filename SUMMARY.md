@@ -73,6 +73,6 @@
 * [Hackthebox - Netmon](writeup/netmon.md)
 * [Hackthebox - Help](writeup/help.md)
 * [Hackthebox - Querier](writeup/querier.md)
-* [Hackthebox - Querier](writeup/lightweight.md)
+* [Hackthebox - Lightweight](writeup/lightweight.md)
 
 
