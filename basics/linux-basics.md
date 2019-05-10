@@ -138,6 +138,15 @@ netstat -nap | less
 ```
 _Note that various TCP and UDP po1ts are shown as LISTENING. These are waiting for a connection. Others may indicate that they are ESTABLISHED. These have existing connections._
 
+
+Mount Network Share:
+
+```
+mkdir /mnt/myFolder/
+mount -t cifs //myServerIpAdress/sharename /mnt/myFolder/
+```
+
+
 ## Building Tools
 
 untar a file
