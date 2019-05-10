@@ -186,3 +186,8 @@ Shutdown and halt: `shutdown -h now`
 
 Shutdown and reboot: `shutdown -r now` or `reboot`
 
+## Open folder in graphic mode
+
+```
+xdg-open [folder]
+```
