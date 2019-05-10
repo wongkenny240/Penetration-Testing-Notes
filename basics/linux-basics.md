@@ -143,7 +143,7 @@ Mount Network Share:
 
 ```
 mkdir /mnt/myFolder/
-mount -t cifs //myServerIpAdress/sharename /mnt/myFolder/
+mount -t cifs -o username=serverUserName //myServerIpAdress/sharename /mnt/myFolder/
 ```
 
 
